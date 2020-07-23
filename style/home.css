@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  /* font */
+@font-face {
+    font-family: "Avenir";
+    src: url("./font/Avenir_Font/Avenir-Book.ttf");
+    }
+@font-face {
+    font-family: "Avenir-bold";
+    src: url("./font/Avenir_Font/AvenirLTStd-Medium.otf");
+    }
+@font-face {
+    font-family: "Playfair-bold";
+    src: url("./font/PlayfairDisplay_Font/PlayfairDisplay-Bold.ttf");
+    }
+
+  #fullpage {
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  #fullpage section { 
+    height: 90vh;
+    background-color: black;
+}
+#navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Avenir', sans-serif;
+
+}
+#navbar-logo{
+    width: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#navbarList{
+    display: flex;
+    font-size: 14px;
+
+}
+#navbarList p {
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#navbarLine {
+    color: #ffff00;
+}
+#navbarLine:after {
+    content: "";
+    width: 55px;
+    height: 2px;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #ffff00;
+    margin-left: -55px;
+}
+/* first section */
+#fSec{
+    color: #ffff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightcyan; */
+}
+.fsec-text{
+    font-family: 'Playfair-bold', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.fsec-text:nth-child(1){
+    font-size: 100px;
+    display: flex;
+    align-items: flex-start;
+    /* border: 1px solid lightcyan; */
+}
+.fsec-text:nth-child(2){
+    font-size: 100px;
+    margin-top: -15px;
+}
+.fsec-text:nth-child(3){
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top:20px;
+
+}
+.h-the{
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Avenir', sans-serif;
+}
+
+/* 2nd section */
+#sSec{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sSec h2{
+    font-family: 'Avenir-bold', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 800px;
+}
+#sSec p{
+    font-family: 'Avenir-bold', sans-serif;
+    font-size: 50px;
+    width: 800px;
+    color: #ffff00;
+    margin-top: -70px;
+
+}
+
+#sSec h2 span:after {
+    content: "";
+    width: 300px;
+    height: 6px;
+    position: absolute;
+    margin-top: 30px;
+    background-color: #ED1E79;
+    margin-left: -290px;
+}
