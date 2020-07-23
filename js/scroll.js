@@ -1,35 +1,10 @@
-console.log("etst")
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
 
-$(document).ready(function () {
-    var divs = $('.mydiv');
-    var dir = 'up'; // wheel scroll direction
-    var div = 0; // current div
-    $(document.body).on('DOMMouseScroll mousewheel', function (e) {
-        if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
-            dir = 'down';
-        } else {
-            dir = 'up';
-        }
-        // find currently visible div :
-        div = -1;
-        divs.each(function(i){
-            if (div<0 && ($(this).offset().top >= $(window).scrollTop())) {
-                div = i;
-            }
-        });
-        if (dir == 'up' && div > 0) {
-            div--;
-        }
-        if (dir == 'down' && div < divs.length) {
-            div++;
-        }
-        //console.log(div, dir, divs.length);
-        $('html,body').stop().animate({
-            scrollTop: divs.eq(div).offset().top
-        }, 200);
-        return false;
-    });
-    $(window).resize(function () {
-        $('html,body').scrollTop(divs.eq(div).offset().top);
-    });
-});
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
