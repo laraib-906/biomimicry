@@ -5,9 +5,14 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
   <title>Btitle</title>
+  <!-- custom -->
   <link rel="stylesheet" type="text/css" href="./style/home.css">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+
 	</head>
-	<body>
+	<body style="background-color: black;">
     <div id="navbar">
       <div id="navbar-logo">
         THE  BIOMIMICRY  PROJECT
@@ -18,29 +23,28 @@
 
       </div>
     </div>
-<div id="fullpage">
-      <section id="fSec">
-        <p class="fsec-text"><span class="h-the">The</span><span> BIOMIMICRY</span></p>
-        <p class="fsec-text" >PROJECT</p>
-        <p class="fsec-text">NOW IS TIME TO SOLVE THE CLIMATE CRISIS</p>
-      </section>
-      <section id="sSec">
-        <h2>The biomimicry project is a global  mission to maximise finding solutions in the fight against <span>climate crisis</span>.</h2>
-        <p>The goal is to create a sustainable and safe world for everyone.</p>
-      </section>
-      <section>3</section>
-      <section>4</section>
-      <section>5</section>
-      <section>6</section>
-    </div>
+    <div id="backgroud-ani"></div>
 
-</body>
-<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js'></script> 
-<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
-<script type="text/javascript" src="./js/plugins/scroll/jquery.fullpage.min.js"></script> 
-<script type="text/javascript">
-		FastClick.attach(document.body);
-		$('#fullpage').fullpage();
+    <section class="sec" id="fSec">
+        <p data-aos="zoom-in-down" data-aos-duration="1500" class="fsec-text"><span class="h-the">The</span><span> BIOMIMICRY</span></p>
+        <p data-aos="zoom-in-down" data-aos-duration="1500" class="fsec-text" >PROJECT</p>
+        <p data-aos="zoom-in-down" data-aos-duration="1500" class="fsec-text">NOW IS TIME TO SOLVE THE CLIMATE CRISIS</p>
+        <div id="ball-ani"></div>
+    </section>
+    <section class="sec" id="sSec">
+        <h2 data-aos="zoom-in-up" data-aos-duration="1500" >The Biomimicry Project is a global  mission to maximise finding solutions in the fight against <span>climate crisis</span>.</h2>
+        <p data-aos="zoom-in-up" data-aos-duration="1500">The goal is to create a sustainable and safe world for everyone.</p>
+    </section>
+
+
+<!-- scripts -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
 <script src="./js/scroll.js" type="text/javascript"></script>
+<script src="./js/lottie.js"></script>
+<script src="./js/lottieMain.js"></script>
 </html>

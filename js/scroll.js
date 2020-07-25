@@ -1,10 +1,15 @@
-var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+function viewport() {
+  var e = window, a = 'inner';
+  if (!('innerWidth' in window )) {
+      a = 'client';
+      e = document.documentElement || document.body;
+  }
+  return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+var height = viewport().height;
+$(document).on('wheel', function(e) {
+e.preventDefault();
+$('html, body').stop(true).animate({
+  scrollTop: (e.originalEvent.deltaY > 0 ? '+=' : '-=') + $(window).height() + 'px'
+});
+});
