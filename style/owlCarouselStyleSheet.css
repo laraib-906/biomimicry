@@ -1,5 +1,5 @@
-@import url('/biomimicry/style/owl.carousel.min.css');
-@import url('/biomimicry/style/owl.theme.default.css');
+@import url('./owl.carousel.min.css');
+@import url('./owl.theme.default.css');
 
 body{
     background-color: black;
