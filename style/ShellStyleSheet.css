@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+#mainDiv{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+.shellImage{
+    position: absolute;
+    width: 260px;
+    left: 40%;
+    top : 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#shell1Ani{
+    width: 290px;
+    position: absolute;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50%,-50%);
+}
+#shell2Ani{
+    width:310px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#shell3Ani{
+    width:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#shell4Ani{
+    width:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}

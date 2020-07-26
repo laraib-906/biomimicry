@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+#mainDiv{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    /* background-color: white; */
+    overflow: hidden;
+}
+
+.squidImage{
+    position: absolute;
+    width: 300px;
+    left: 40%;
+    top : 52%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#squid1Ani{
+    width: 290px;
+    position: absolute;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50%,-50%);
+}
+#squid2Ani{
+    width:310px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#squid3Ani{
+    width:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#squid4Ani{
+    width:700px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
