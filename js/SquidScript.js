@@ -34,7 +34,7 @@ function showcircle(){
     animation1.play()
 }
 function stopcircle (){
-    animation1.pause()
+    animation1.stop()
 }
 function showsquid(){
     var img= document.getElementById("imagesquid")
@@ -42,10 +42,14 @@ function showsquid(){
     var div2=document.getElementById("squid2Ani")
     var div3 = document.getElementById("squid3Ani")
     var div4 = document.getElementById("squid4Ani")
+    var para1 = document.getElementById("maintextClass1")
+    var para2 = document.getElementById("maintextClass2")
+    var heading = document.getElementById("mainHeading")
     if(img.style.display && div1.style.display == "block"){
         img.style.display="none"
         div1.style.display="none"
         div2.style.display="block"
+        heading.style.display="none"
         animation2.play();
         setTimeout(()=>{if(div2.style.display=="block" ){
                         div2.style.display="none";
@@ -55,9 +59,11 @@ function showsquid(){
                         if(div3.style.display=="block" ){
                             div3.style.display="none";
                             div4.style.display="block"
+                            para1.style.display="block";
+                            para2.style.display="block";
                         animation4.play();}
                     },2000)
-                }} ,1000)
+                }} ,10)
         
             
     }
@@ -72,14 +78,20 @@ function hidesquid(){
     var div2=document.getElementById("squid2Ani")
     var div3=document.getElementById("squid3Ani")
     var div4=document.getElementById("squid4Ani")
+    var para1 = document.getElementById("maintextClass1")
+    var para2 = document.getElementById("maintextClass2")
+    var heading = document.getElementById("mainHeading")
     if(imgSetting && div1Setting == "none"){
         img.style.display="block"
         div1.style.display="block"
+        heading.style.display="block"
         div2.style.display="none"
         div3.style.display="none"
         div4.style.display="none"
-        animation2.pause();
-        animation3.pause();
-        animation4.pause();
+        para1.style.display="none"
+        para2.style.display="none"
+        animation2.stop();
+        animation3.stop();
+        animation4.stop();
     }
 }

@@ -42,9 +42,13 @@ function showBeetle(){
     var div2=document.getElementById("beetle2Ani")
     var div3 = document.getElementById("beetle3Ani")
     var div4 = document.getElementById("beetle4Ani")
+    var para1 = document.getElementById("maintextClass1")
+    var para2 = document.getElementById("maintextClass2")
+    var heading = document.getElementById("mainHeading")
     if(img.style.display && div1.style.display == "block"){
         img.style.display="none"
         div1.style.display="none"
+        heading.style.display="none"
         div2.style.display="block"
         animation2.play();
         setTimeout(()=>{if(div2.style.display=="block" ){
@@ -55,9 +59,11 @@ function showBeetle(){
                         if(div3.style.display=="block" ){
                             div3.style.display="none";
                             div4.style.display="block"
+                            para1.style.display="block";
+                            para2.style.display="block";
                         animation4.play();}
                     },2000)
-                }} ,1000)
+                }} ,10)
         
             
     }
@@ -67,19 +73,23 @@ function showBeetle(){
 function hideBeetle(){
     var img= document.getElementById("imageBeetle")
     var div1=document.getElementById("beetle1Ani")
-    var imgSetting = img.style.display
-    var div1Setting = div1.style.display
     var div2=document.getElementById("beetle2Ani")
     var div3=document.getElementById("beetle3Ani")
     var div4=document.getElementById("beetle4Ani")
-    if(imgSetting && div1Setting == "none"){
+    var para1 = document.getElementById("maintextClass1")
+    var para2 = document.getElementById("maintextClass2")
+    var heading = document.getElementById("mainHeading")
+    if(img.style.display && div1.style.display == "none"){
         img.style.display="block"
         div1.style.display="block"
+        heading.style.display="block"
         div2.style.display="none"
         div3.style.display="none"
         div4.style.display="none"
-        animation2.pause();
-        animation3.pause();
-        animation4.pause();
+        para1.style.display="none"
+        para2.style.display="none"
+        animation2.stop();
+        animation3.stop();
+        animation4.stop();
     }
 }

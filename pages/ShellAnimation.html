@@ -12,13 +12,30 @@
 
 <body>
     <div id="mainDiv">
+        <!-- image of sheel -->
     <div id="imageshell" onclick="showshell()" onmouseover="showcircle()" onmouseout="stopcircle()" style="display: block;" >
         <img class="shellImage"  src="../media/image/Shell.png"/>
     </div>
+    <!-- first animation -->
     <div  id="shell1Ani"  style="display: block;" ></div>
+     <!-- text 1 -->
+     <div id="maintextClass1" style="display: none;">
+        <div class="flex1"><p class="text1">BIOMIMICRY SOLUTION</p><span class="colorChange1"> Shell protects </br> from heat</p></div>
+        <div class="flex2"><p class="text2">The shell of a desert snails helps them survive extreme heat using light reflectance and architecturally-derived, insulating layers of air. 
+        <span class="colorChange2">Mimicked today in architecture structures.</span></p></div>
+    </div>
+    <!-- rest of animation -->
     <div  id="shell2Ani" style="display: none;" onclick="hideshell()"></div>
     <div  id="shell3Ani" style="display: none;" onclick="hideshell()"></div>
     <div  id=    "shell4Ani" style="display: none;" onclick="hideshell()"></div>
+    <!-- text 2 -->
+    <div id="maintextClass2" style="display: none;">
+        <p>The shell has the ability to reflect 90% of visible solar radiation, and 95% of infrared radiation.
+        </br><span class="colorChange3">Copyright Biomimicry 3.8 Institute, AskNature.</span></p>
+   </div>
+   <!-- name of component -->
+   <div id="mainHeading" style="display: block;"><p class="text3">SOLVE <span style="color:#FFFF00;">ENERGY WASTE</span> LIKE THE</p><h1>Desert snail</h1></div>
+    </div>
     </div>
     <script src="../js/lottie.js"></script>
     <script src="../js/ShellScript.js"></script>
