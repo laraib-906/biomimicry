@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+}
+#mainDiv{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    /* background-color: purple; */
+    overflow: hidden;
+}
+#maintextClass1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.flex1{
+    width:300px;
+}
+.flex2{
+    position: relative;
+    top:25px; 
+    right:20px;
+    font-size: 17px; 
+    width: 700px;
+    text-align: justify;
+    /* font-family: ; */
+}
+.text1{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    /* font-family: ; */
+}
+.text2{
+    font-weight: bold;
+    color: white;
+    
+}
+.colorChange1{
+    color:#ED1E79;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top:35px;
+    /* font-family: ; */
+}
+.colorChange2{
+    color:#ED1E79;
+    
+}
+.beetleImage{
+    width: 370px;
+    position: absolute;
+    left:50%;
+    top : 64%;
+    transform: translate(-50%,-50%);
+    /* height:394px; */
+}
+
+#beetleMap{
+    width:200px;
+    position: absolute;
+    left:70%;
+    top : 30%;
+}
+
+
+.beetleLines{
+    width: 153px;
+    position: absolute;
+    left:49.5%;
+    top : 55%;
+}
+.text3{
+    font-size:60%;
+    color: white;
+    position: absolute;
+    left:29%;
+    top : 81%;
+    /* font-family: ; */
+}
+.text4{
+    color: white;
+    font-size:70%;
+    position: absolute;
+    left:2%;
+    top :65%;
+    /* font-family: ; */
+}
+/* beetle example css */
+.beetleRealImage{
+    width: 370px;
+    position: absolute;
+    left:53.5%;
+    top : 55%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,88 @@
+body{
+    background-color:black;
+}
+#mainDiv{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    /* background-color: purple; */
+    overflow: hidden;
+}
+#maintextClass1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.flex1{
+    width:200px;
+}
+.flex2{
+    position: relative;
+    top:25px; 
+    right:3.5%;
+    font-size: 17px; 
+    width: 450px;
+    text-align: justify;
+    /* font-family: ; */
+}
+.text1{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left:-1%;
+    /* font-family: ; */
+}
+
+.text2{
+    font-weight: bold;
+    color: white;
+    
+}
+.text3{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    /* font-family: ; */
+}
+.colorChange1{
+    color:#0000FF;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top:35px;
+    left:7.5%;
+    /* font-family: ; */
+}
+.colorChange2{
+    color:#0000FF;
+    
+}
+.squidImage{
+    width: 300px;
+    position: absolute;
+    left:47%;
+    top :60%;
+    transform: translate(-50%,-50%);
+    /* height:394px; */
+}
+
+.text3{
+    font-size:60%;
+    text-align: justify;
+    color: white;
+    position: absolute;
+    left:50%;
+    top : 73%;
+    /* font-family: ; */
+}
+
+/* beetle example css */
+.squidRealImage{
+    width: 370px;
+    position: absolute;
+    left:54%;
+    top : 57%;
+    transform: translate(-50%,-50%);
+}

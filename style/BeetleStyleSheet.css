@@ -3,7 +3,7 @@ body{
 }
 
 #mainDiv{
-    width: 600px;
+    width: 700px;
     height: 500px;
     position: relative;
     /* background-color: yellow; */
@@ -86,20 +86,23 @@ h1{
     top:53%;
     left:50%;
     transform: translate(-50%,-50%);
+    transition-timing-function: ease-in-out;
 }
 #beetle3Ani{
-    width:370px;
+    width:500px;
     position: absolute;
-    top:53%;
-    left:50%;
+    top:55%;
+    left:49%;
     transform: translate(-50%,-50%);
+    transition-timing-function: linear;
 }
 #beetle4Ani{
     width:370px;
     position: absolute;
     top:53%;
-    left:59%;
+    left:50%;
     transform: translate(-50%,-50%);
+    transition-timing-function:linear;
 }
 #maintextClass2{
     width: 300px;
