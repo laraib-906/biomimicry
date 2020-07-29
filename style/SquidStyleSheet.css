@@ -1,15 +1,21 @@
 body{
     background-color: black;
 }
-
-#mainDiv{
+#squidmainDiv{
     width: 700px;
+    height: 500px;
+    position: relative;
+    /* background-color: brown; */
+    overflow: hidden;
+}
+#squidsubDiv{
+    width: 650px;
     height: 500px;
     position: relative;
     /* background-color: yellowgreen; */
     overflow: hidden;
 }
-#mainHeading{
+#squidmainHeading{
     position: absolute;
     width: 370px;
     left: 62%;
@@ -18,22 +24,22 @@ body{
     font-weight: bold;
     
 }
-h1{
+.squidh1{
     position: relative;
     top:-40px;
     font-size: 50px;
     color:#0000FF;
     /* font-family: ; */
 }
-#maintextClass1{
+#squidmaintextClass1{
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
 }
-.flex1{
+.squidflex1{
     width:170px;
 }
-.flex2{
+.squidflex2{
     position: relative;
     top:-5px; 
     left:190px;
@@ -42,18 +48,18 @@ h1{
     text-align: justify;
     /* font-family: ; */
 }
-.text1{
+.squidtext1{
     font-size: 13.6px;
     font-weight: bold;
     color: white;
     /* font-family: ; */
 }
-.text2{
+.squidtext2{
     font-weight: bold;
     color: white;
     
 }
-.colorChange1{
+.squidcolorChange1{
     color:#0000FF;
     font-size: 30px;
     font-weight: bold;
@@ -63,11 +69,11 @@ h1{
     left:45px;
     /* font-family: ; */
 }
-.colorChange2{
+.squidcolorChange2{
     color:#0000FF;
     
 }
-#maintextClass2{
+#squidmaintextClass2{
     width: 300px;
     font-size: 12px;
     color:#0000FF;
@@ -75,7 +81,7 @@ h1{
     top:300px;
     left:230px;
 }
-.colorChange3{
+.squidcolorChange3{
     color:white;
 }
 .squidImage{
@@ -114,3 +120,14 @@ h1{
     left:47%;
     transform: translate(-50%,-50%);
 }
+#squidButton{
+    display: flex;
+    width: 50px;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+    height:200px;
+    flex-direction: column;
+    position: absolute;
+    top:60%;
+    right:0%
+    }

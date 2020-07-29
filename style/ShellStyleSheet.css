@@ -1,15 +1,21 @@
 body{
     background-color: black;
 }
-
-#mainDiv{
+#shellmainDiv{
     width: 700px;
+    height: 500px;
+    position: relative;
+    /* background-color: brown; */
+    overflow: hidden;
+}
+#shellsubDiv{
+    width: 650px;
     height: 500px;
     position: relative;
     /* background-color: green; */
     overflow: hidden;
 }
-#mainHeading{
+#shellmainHeading{
     position: absolute;
     width: 370px;
     left: 62%;
@@ -18,22 +24,22 @@ body{
     font-weight: bold;
     
 }
-h1{
+.shellh1{
     position: relative;
     top:-40px;
     font-size: 50px;
     color:#FFFF00;
     /* font-family: ; */
 }
-#maintextClass1{
+#shellmaintextClass1{
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
 }
-.flex1{
+.shellflex1{
     width:170px;
 }
-.flex2{
+.shellflex2{
     position: relative;
     top:-5px; 
     left:200px;
@@ -42,7 +48,7 @@ h1{
     text-align: justify;
     /* font-family: ; */
 }
-.text1{
+.shelltext1{
     font-size: 13.6px;
     font-weight: bold;
     color: white;
@@ -51,18 +57,18 @@ h1{
     /* font-family: ; */
 }
 
-.text2{
+.shelltext2{
     font-weight: bold;
     color: white;
     
 }
-.text3{
+.shelltext3{
     font-size: 13.6px;
     font-weight: bold;
     color: white;
     /* font-family: ; */
 }
-.colorChange1{
+.shellcolorChange1{
     color:#FFFF00;
     font-size: 30px;
     font-weight: bold;
@@ -71,11 +77,11 @@ h1{
     top:35px;
     /* font-family: ; */
 }
-.colorChange2{
+.shellcolorChange2{
     color:#FFFF00;
     
 }
-#maintextClass2{
+#shellmaintextClass2{
     width: 300px;
     font-size: 12px;
     color:#FFFF00;
@@ -83,7 +89,7 @@ h1{
     top:260px;
     left:220px;
 }
-.colorChange3{
+.shellcolorChange3{
     color:white;
 }
 .shellImage{
@@ -122,3 +128,13 @@ h1{
     left:48%;
     transform: translate(-50%,-50%);
 }
+#shellButton{
+    display: flex;
+    width: 50px;
+    height:200px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    top:60%;
+    right:0%
+    }
