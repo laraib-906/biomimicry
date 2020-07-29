@@ -110,14 +110,31 @@ function movebeetleB1(){
     beb1.src="../media/image/Buttons/Beetle/Beetle_Black_01.svg" 
     beb2.src="../media/image/Buttons/Beetle/Beetle_Pink_02.svg"
     beb3.src="../media/image/Buttons/Beetle/Beetle_Pink_03.svg"
+    showSecBeetle(0)
 }
 function movebeetleB2(){
     beb2.src="../media/image/Buttons/Beetle/Beetle_Black_02.svg" 
     beb1.src="../media/image/Buttons/Beetle/Beetle_Pink_01.svg"
     beb3.src="../media/image/Buttons/Beetle/Beetle_Pink_03.svg"
+    showSecBeetle(1)
+
 }
 function movebeetleB3(){
     beb3.src="../media/image/Buttons/Beetle/Beetle_Black_03.svg" 
     beb1.src="../media/image/Buttons/Beetle/Beetle_Pink_01.svg"
     beb2.src="../media/image/Buttons/Beetle/Beetle_Pink_02.svg"
+    showSecBeetle(2)
+
+}
+
+function showSecBeetle(index){
+    ele = [
+        document.getElementById("beetlesubDiv"),
+        document.getElementById("beetleInsubDiv"),
+        document.getElementById("beetleInsubDiv1"),
+    ]
+    for (let e of ele){
+        e.style.display = "none"
+    }
+    ele[index].style.display = "block"
 }

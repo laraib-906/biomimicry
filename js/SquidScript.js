@@ -112,14 +112,32 @@ function movesquidB1(){
     sqb1.src="../media/image/Buttons/Squid/Squid_Black_01.svg" 
     sqb2.src="../media/image/Buttons/Squid/Squid_Blue_02.svg"
     sqb3.src="../media/image/Buttons/Squid/Squid_Blue_03.svg"
+    showSecS(0)
 }
 function movesquidB2(){
     sqb2.src="../media/image/Buttons/Squid/Squid_Black_02.svg" 
     sqb1.src="../media/image/Buttons/Squid/Squid_Blue_01.svg"
     sqb3.src="../media/image/Buttons/Squid/Squid_Blue_03.svg"
+    showSecS(1)
+
 }
 function movesquidB3(){
     sqb3.src="../media/image/Buttons/Squid/Squid_Black_03.svg" 
     sqb1.src="../media/image/Buttons/Squid/Squid_Blue_01.svg"
     sqb2.src="../media/image/Buttons/Squid/Squid_Blue_02.svg"
+    showSecS(2)
+
+}
+function showSecS(index){
+    console.log("")
+    var eleShell = [
+        document.getElementById("squidsubDiv"),
+        document.getElementById("squidInsubDiv"),
+        document.getElementById("squidInsubDiv1"),
+    ]
+    for (let e of eleShell){
+        console.log(e)
+        e.style.display = "none"
+    }
+    eleShell[index].style.display = "block"
 }

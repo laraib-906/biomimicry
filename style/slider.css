@@ -1,0 +1,25 @@
+
+.carousel {
+    height: 550px !important;
+    width: 700px !important;
+}
+#sliderWrapper{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sliderArrow {
+    width: 900px;
+    position: absolute;
+    z-index: 0;
+    /* border: 2px solid wheat; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#sliderArrow img{
+    width: 50px !important;
+    height: 50px !important;
+
+}

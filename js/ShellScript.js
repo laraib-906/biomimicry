@@ -110,14 +110,32 @@ function moveshellB1(){
     sb1.src="../media/image/Buttons/Shell/Shell_Black_01.svg" 
     sb2.src="../media/image/Buttons/Shell/Shell_Yellow_02.svg"
     sb3.src="../media/image/Buttons/Shell/Shell_Yellow_03.svg"
+    showSecShell(0)
 }
 function moveshellB2(){
     sb2.src="../media/image/Buttons/Shell/Shell_Black_02.svg" 
     sb1.src="../media/image/Buttons/Shell/Shell_Yellow_01.svg"
     sb3.src="../media/image/Buttons/Shell/Shell_Yellow_03.svg"
+    showSecShell(1)
+
 }
 function moveshellB3(){
     sb3.src="../media/image/Buttons/Shell/Shell_Black_03.svg" 
     sb1.src="../media/image/Buttons/Shell/Shell_Yellow_01.svg"
     sb2.src="../media/image/Buttons/Shell/Shell_Yellow_02.svg"
+    showSecShell(2)
+
+}
+function showSecShell(index){
+    console.log("")
+    var eleShell = [
+        document.getElementById("shellsubDiv"),
+        document.getElementById("shellInsubDiv"),
+        document.getElementById("shellInsubDiv1"),
+    ]
+    for (let e of eleShell){
+        console.log(e)
+        e.style.display = "none"
+    }
+    eleShell[index].style.display = "block"
 }
