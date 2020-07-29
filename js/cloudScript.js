@@ -3,7 +3,7 @@ var animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: "/biomimicry/media/animations/Cloud-animated-illustration.json",
+    path: "../media/animations/Cloud-animated-illustration.json",
     innerHeight:100
 })
 function show(){

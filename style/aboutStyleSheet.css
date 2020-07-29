@@ -1,0 +1,36 @@
+body{
+    background-color:#009245;
+}
+#mainDiv{
+    position: relative;
+    display: flex;
+    text-align: justify;
+    justify-content: space-evenly;
+}
+.aboutUsflex1{
+    width:500px;
+    color: white;
+    font-weight: bold;
+}
+.aboutUs{
+    position: absolute;
+    left: 2%;
+    font-size: 177%; 
+}
+.aboutColorheading{
+    color:#FFFF00;
+    position: absolute;
+    top:5%;
+    left: 5.9%;
+    font-size: 250%;
+}
+.aboutColor{
+    color:#FFFF00;
+}
+.aboutUsflex2{
+    color: white;
+    width: 600px;
+    position: absolute;
+    left: 36%;
+    top:580%;
+}
