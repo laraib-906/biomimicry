@@ -55,50 +55,55 @@ var sqb2 = document.getElementById("squidb2");
 var sqb3 = document.getElementById("squidb3");
 // show funct
 function showsquid(){
+    hideSlideBtn("squidb4")
+    squid4Block = document.getElementById("squid4Block")
+
     var img= document.getElementById("imagesquid")
     var div1=document.getElementById("squid1Ani")
     var div2=document.getElementById("squid2Ani")
     var div3 = document.getElementById("squid3Ani")
-    var div4 = document.getElementById("squid4Ani")
+    // var div4 = document.getElementById("squid4Ani")
     var div5=document.getElementById("squid5Ani")
     var squidImage = document.getElementById("squid4image")
     var para1 = document.getElementById("squidmaintextClass1")
     var para2 = document.getElementById("squidmaintextClass2")
     var heading = document.getElementById("squidmainHeading")
-    if(img.style.display && div1.style.display == "block"){
-        img.style.display="none"
-        div1.style.display="none"
-        sqb1.style.display="block"
-        sqb2.style.display="block"
-        sqb3.style.display="block"
-        div2.style.display="block"
-        div5.style.display="none"
-        squidImage.style.display="none"
-        div4.style.opacity="0%"
-        heading.style.display="none"
+    hideElement(img)
+    hideElement(div1)
+    hideElement(heading)
+    // hideElement(squidImage)
+    hideElement(div5)
+
+    showElement(div2 )
+    showElement(sqb1 )
+    showElement(sqb2 )
+    showElement(sqb3 )
+
+        // div4.style.opacity="0%"
         squidanimation2.play();
-        setTimeout(()=>{if(div2.style.display=="block" ){
-                        div2.style.display="none";
-                    div3.style.display="block"
+        setTimeout(()=>{
+            hideElement(div2)
+            showElement(div3 )
                     squidanimation3.play();
                     setTimeout(()=>{
-                        if(div3.style.display=="block" ){
-                            div3.style.display="none";
-                            div4.style.display="block";
-                            squidImage.style.display="block"
-                            squidImage.style.opacity="100%"
-                            para1.style.display="block";
-                            para2.style.display="block";
-                            squidanimation4.play();}
+                        squid4Block.style.display = "block"
+
+                        hideElement(div3)
+                        showElement(squidImage )
+                        showElement(para1 )
+                        showElement(para2 )
+                        showElement(squidImage )
                     },2000)
-                }} ,10)
+                } ,10)
         
             
-    }
+    
     
 }
 // function to hide
 function hidesquid(){
+    showSlideBtn("squidb4")
+    showSecS(0)
     var img= document.getElementById("imagesquid")
     var div1=document.getElementById("squid1Ani")
     var imgSetting = img.style.display
@@ -111,39 +116,48 @@ function hidesquid(){
     var para1 = document.getElementById("squidmaintextClass1")
     var para2 = document.getElementById("squidmaintextClass2")
     var heading = document.getElementById("squidmainHeading")
-    if(imgSetting && div1Setting == "none"){
-        img.style.display="block"
-        div1.style.display="block"
-        heading.style.display="block"
-        sqb1.style.display="none"
-        sqb2.style.display="none"
-        sqb3.style.display="none"
-        div2.style.display="none"
-        div3.style.display="none"
-        div4.style.display="none"
-        div5.style.display="block"
-        squidImage.style.opacity="0%"
-        para1.style.display="none"
-        para2.style.display="none"
+    squid4Block = document.getElementById("squid4Block")
+
+    squid4Block.style.display = "none"
+
+
+
+    showElement(img )
+    showElement(div1 )
+    showElement(heading )
+    showElement(div5 )
+    hideElement(sqb1)
+    hideElement(sqb2)
+    hideElement(sqb3)
+    hideElement(div2)
+    hideElement(div4)
+    hideElement(para1)
+    hideElement(para2)
+    hideElement(div3)
+    hideElement(squidImage)
+
+        // squidImage.style.opacity="0%"
+
         squidanimation2.stop();
         squidanimation3.stop();
         squidanimation4.stop();
-    }
+    
 }
 // move svg
 function movesquid(){
     var div4 = document.getElementById("squid4Ani")
     var squidImage = document.getElementById("squid4image")
-    div4.style.opacity="100%"
-    squidImage.style.display="none"
+    hideElement(squidImage)
+    showElement(div4 )
     squidanimation4.play()
 
 }
 function stopsquid(){
     var div4 = document.getElementById("squid4Ani")
     var squidImage = document.getElementById("squid4image")
-    div4.style.opacity="0%"
-    squidImage.style.display="block"
+    hideElement(div4)
+    showElement(squidImage )
+
     squidanimation4.stop()
 }
 // button function 

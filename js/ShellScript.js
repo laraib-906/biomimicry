@@ -55,52 +55,58 @@ var sb2 = document.getElementById("shellb2");
 var sb3 = document.getElementById("shellb3");
 // function to show
 function showshell(){
+    hideSlideBtn("shellb4")
+    var ImageBlock = document.getElementById("shell4Block")
+
     var img= document.getElementById("imageshell")
     var div1=document.getElementById("shell1Ani")
     var div2=document.getElementById("shell2Ani")
     var div3 = document.getElementById("shell3Ani")
-    var div4 = document.getElementById("shell4Ani")
     var div5 = document.getElementById("shell5Ani")
     var para1 = document.getElementById("shellmaintextClass1")
     var para2 = document.getElementById("shellmaintextClass2")
     var heading = document.getElementById("shellmainHeading")
     var shellImage = document.getElementById("shell4image")
-    
-    if(img.style.display && div1.style.display == "block"){
-        img.style.display="none"
-        div1.style.display="none"
-        div2.style.display="block"
-        div5.style.display="none"
-        sb1.style.display="block"
-        sb2.style.display="block"
-        sb3.style.display="block"
-        heading.style.display="none"
-        shellImage.style.display="none"
-        div4.style.opacity="0%"
+    hideElement(img)
+    hideElement(div1)
+    hideElement(heading)
+    hideElement(shellImage)
+    hideElement(div5)
+
+    showElement(div2 )
+    showElement(sb1 )
+    showElement(sb2 )
+    showElement(sb3 )
+
         shellanimation2.play();
-        setTimeout(()=>{if(div2.style.display=="block" ){
-                        div2.style.display="none";
-                    div3.style.display="block"
+        setTimeout(()=>{
+            hideElement(div2)
+            showElement(div3 )
                     shellanimation3.play();
                     setTimeout(()=>{
-                        if(div3.style.display=="block" ){
-                            div3.style.display="none";
-                            div4.style.display="block"
-                            shellImage.style.display="block"
-                            shellImage.style.opacity="100%"
-                            para1.style.display="block"
-                            para2.style.display="block"
-                            shellanimation4.play();
-                        }
+                        hideElement(div3)
+                        showElement(shellImage )
+                        showElement(para1 )
+                        showElement(para2 )
+                        showElement(shellImage )
+                        ImageBlock.style.display = "block"
+
+                            // shellImage.style.opacity="100%"
+
+                            // shellanimation4.play();
+                        
                     },2000)
-                }} ,10)
+                } ,10)
         
             
-    }
+    
     
 }
 // function to hide
 function hideshell(){
+    showSlideBtn("shellb4")
+    showSecShell(0)
+
     var img= document.getElementById("imageshell")
     var div1=document.getElementById("shell1Ani")
     var div2=document.getElementById("shell2Ani")
@@ -111,38 +117,44 @@ function hideshell(){
     var para1 = document.getElementById("shellmaintextClass1")
     var para2 = document.getElementById("shellmaintextClass2")
     var heading = document.getElementById("shellmainHeading")
-    if(img.style.display && div1.style.display == "none"){
-        img.style.display="block"
-        div1.style.display="block"
-        heading.style.display="block"
-        sb1.style.display="none"
-        sb2.style.display="none"
-        sb3.style.display="none"
-        div2.style.display="none"
-        div3.style.display="none"
-        div4.style.display="none"
-        div5.style.display="block"
-        shellImage.style.opacity="0%"
-        para2.style.display="none"
-        para1.style.display="none"
+    var ImageBlock = document.getElementById("shell4Block")
+
+    ImageBlock.style.display = "none"
+
+    showElement(img )
+    showElement(div1 )
+    showElement(heading )
+    showElement(div5 )
+    hideElement(sb1)
+    hideElement(sb2)
+    hideElement(sb3)
+    hideElement(div2)
+    hideElement(div4)
+    hideElement(para1)
+    hideElement(para2)
+    hideElement(div3)
+    hideElement(shellImage)
+
+
         shellanimation2.stop();
         shellanimation3.stop();
         shellanimation4.stop();
-    }
+
 }
 function moveShell(){
     var div4 = document.getElementById("shell4Ani")
     var shellImage = document.getElementById("shell4image")
-    div4.style.opacity="100%"
-    shellImage.style.display="none"
+    showElement(div4 )
+    hideElement(shellImage)
     shellanimation4.play()
 
 }
 function stopShell(){
     var div4 = document.getElementById("shell4Ani")
     var shellImage = document.getElementById("shell4image")
-    div4.style.opacity="0%"
-    shellImage.style.display="block"
+
+    showElement(shellImage )
+    hideElement(div4)
     shellanimation4.stop()
 }
 // function for button

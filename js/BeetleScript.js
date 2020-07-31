@@ -50,56 +50,95 @@ function stopbeetlecircle (){
     beetleanimation5.stop()
     div1.style.opacity="100%"
 }
+function hideSlideBtn (backBtn){
+    var btn = document.getElementsByClassName("slide-btn")
+    for( let i of btn)
+        i.style.display = "none"
+    document.getElementById(backBtn).style.display = "block"
+}
+function showSlideBtn (backBtn){
+    var btn = document.getElementsByClassName("slide-btn")
+    for( let i of btn)
+        i.style.display = "block"
+    document.getElementById(backBtn).style.display = "none"
+}
+
+function hideElement(ele){
+    ele.classList.remove("op1")
+    ele.classList.add("op0")
+    ele.style.pointerEvent = "none"
+    
+}
+function showElement(ele){
+    ele.classList.remove("op0")
+    ele.classList.add("op1")
+    ele.style.pointerEvent = "all"
+
+}
+
 // buttons initialization
 var beb1 = document.getElementById("beetleb1");
 var beb2 = document.getElementById("beetleb2");
 var beb3 = document.getElementById("beetleb3");
 // func to show
 function showBeetle(){
+    hideSlideBtn("beetleb4")
+
     var img= document.getElementById("imageBeetle")
     var div1=document.getElementById("beetle1Ani")
     var div2=document.getElementById("beetle2Ani")
     var div3 = document.getElementById("beetle3Ani")
-    var div4 = document.getElementById("beetle4Ani")
+    // var div4 = document.getElementById("beetle4Ani")
     var div5 = document.getElementById("beetle5Ani")
     var beetleImage = document.getElementById("beetle4image")
     var para1 = document.getElementById("beetlemaintextClass1")
     var para2 = document.getElementById("beetlemaintextClass2")
     var heading = document.getElementById("beetlemainHeading")
-    if(img.style.display && div1.style.display == "block"){
-        img.style.display="none"
-        div1.style.display="none"
-        heading.style.display="none"
-        div2.style.display="block"
-        div5.style.display="none"
-        beb1.style.display="block"
-        beb2.style.display="block"
-        beb3.style.display="block"
-        beetleImage.style.display="none"
-        div4.style.opacity="0%"
+    var ImageBlock = document.getElementById("beetle4Block")
+
+        hideElement(img)
+        hideElement(div1)
+        hideElement(heading)
+        hideElement(beetleImage)
+        hideElement(div5)
+
+        showElement(div2 )
+        showElement(beb1 )
+        showElement(beb2 )
+        showElement(beb3 )
+
+
+
+
+        
+        // div4.style.opacity="0%"
         beetleanimation2.play();
-        setTimeout(()=>{if(div2.style.display=="block" ){
-                        div2.style.display="none";
-                    div3.style.display="block"
+        setTimeout(()=>{
+            hideElement(div2)
+            showElement(div3 )
                     beetleanimation3.play();
                     setTimeout(()=>{
-                        if(div3.style.display=="block" ){
-                            div3.style.display="none";
-                            div4.style.display="block"
-                            beetleImage.style.display="block"
+                        hideElement(div3)
+                        // showElement(div4 )
+                        showElement(beetleImage )
+                        showElement(para1 )
+                        showElement(para2 )
                             beetleImage.style.opacity="100%"
-                            para1.style.display="block";
-                            para2.style.display="block";
-                            beetleanimation4.play();}
+                            ImageBlock.style.display = "block"
+
+                            beetleanimation4.play();
                     },2000)
-                }} ,10)
+                } ,10)
         
             
-    }
+    
     
 }
 // func to hide
 function hideBeetle(){
+    showSlideBtn("beetleb4")
+    showSecBeetle(0)
+
     var img= document.getElementById("imageBeetle")
     var div1=document.getElementById("beetle1Ani")
     var div2=document.getElementById("beetle2Ani")
@@ -110,29 +149,36 @@ function hideBeetle(){
     var para1 = document.getElementById("beetlemaintextClass1")
     var para2 = document.getElementById("beetlemaintextClass2")
     var heading = document.getElementById("beetlemainHeading")
-    if(img.style.display && div1.style.display == "none"){
-        img.style.display="block"
-        div1.style.display="block"
-        heading.style.display="block"
-        beb1.style.display="none"
-        beb2.style.display="none"
-        beb3.style.display="none"
-        div2.style.display="none"
-        div3.style.display="none"
-        div4.style.display="none"
-        div5.style.display="block"
-        beetleImage.style.opacity="0%"
-        para1.style.display="none"
-        para2.style.display="none"
+    var ImageBlock = document.getElementById("beetle4Block")
+    ImageBlock.style.display = "none"
+
+
+    showElement(img )
+    showElement(div1 )
+    showElement(heading )
+    showElement(div5 )
+    hideElement(beb1)
+    hideElement(beb2)
+    hideElement(beb3)
+    hideElement(div2)
+    hideElement(div4)
+    hideElement(para1)
+    hideElement(para2)
+    hideElement(div3)
+    hideElement(beetleImage)
+
+
+        // beetleImage.style.opacity="0%"
+
         beetleanimation2.stop();
         beetleanimation3.stop();
         beetleanimation4.stop();
-    }
+    
 }
 function movebeetle(){
     var div4 = document.getElementById("beetle4Ani")
     var beetleImage = document.getElementById("beetle4image")
-    div4.style.opacity="100%"
+    showElement(div4 )
     beetleImage.style.display="none"
     beetleanimation4.play()
 
@@ -140,7 +186,7 @@ function movebeetle(){
 function stopbeetle(){
     var div4 = document.getElementById("beetle4Ani")
     var beetleImage = document.getElementById("beetle4image")
-    div4.style.opacity="0%"
+    hideElement(div4)
     beetleImage.style.display="block"
     beetleanimation4.stop()
 }

@@ -20,48 +20,48 @@
 <body>
     <div id="sliderWrapper">
         <div id="sliderArrow">
-            <img onclick="previous()" src="media/image/slide/SlideLeft.svg"/>
-            <img onclick="next()"  src="media/image/slide/SlideRight.svg"/>
+            <img onclick="previous()" class="slide-btn" src="media/image/slide/SlideLeft.svg"/>
+            <img onclick="next()" class="slide-btn" src="media/image/slide/SlideRight.svg"/>
         </div>
         <div class="carousel carousel-slider">
             <a class="carousel-item" href="#one!">
                 <div>
                     <div id="beetlemainDiv">
                         <div id="beetleButton">
-                            <div ><img style="display: none;" id="beetleb1" onclick="movebeetleB1()" src="media/image/Buttons/Beetle/Beetle_Black_01.svg"/></div>
-                            <div><img style="display: none;" id="beetleb2" onclick="movebeetleB2()" src="media/image/Buttons/Beetle/Beetle_Pink_02.svg"/></div>
-                            <div><img style="display: none;" id="beetleb3" onclick="movebeetleB3()" src="media/image/Buttons/Beetle/Beetle_Pink_03.svg"/></div>
+                            <div ><img  class="op0" id="beetleb1" onclick="movebeetleB1()" src="media/image/Buttons/Beetle/Beetle_Black_01.svg"/></div>
+                            <div><img class="op0" id="beetleb2" onclick="movebeetleB2()" src="media/image/Buttons/Beetle/Beetle_Pink_02.svg"/></div>
+                            <div><img class="op0" id="beetleb3" onclick="movebeetleB3()" src="media/image/Buttons/Beetle/Beetle_Pink_03.svg"/></div>
                         </div>
-                        <div><img id="beetleb4" onmouseover="movebeetleB4()" onmouseout="stopbeetleB4()" src="media/image/Buttons/Beetle/Beetle_UP_BeforeHover.svg" /></div>
+                        <div><img id="beetleb4" style="display: none;" onmouseover="movebeetleB4()" onmouseout="stopbeetleB4()" onclick="hideBeetle()" src="media/image/Buttons/Beetle/Beetle_UP_BeforeHover.svg" /></div>
                        
                     <div id="beetlesubDiv">
                         <!-- image of beetle -->
-                    <div id="imageBeetle" onclick="showBeetle()" onmouseover="showbeetlecircle()" onmouseout="stopbeetlecircle()" style="display: block;" >
+                    <div id="imageBeetle" onclick="showBeetle()" onmouseover="showbeetlecircle()" onmouseout="stopbeetlecircle()" class="op1" >
                         <img class="bettleImage"  src="media/image/Beetle.png"/>
                     </div>
                     <!-- first animation -->
-                    <div  id="beetle1Ani"  style="display: block;" ></div>
-                    <div id="beetle5Ani"  style="display: block;"></div>
+                    <div  id="beetle1Ani"  class="op1" ></div>
+                    <div id="beetle5Ani"  class="op1"></div>
                     <!-- text 1 -->
-                    <div id="beetlemaintextClass1" style="display: none;">
+                    <div id="beetlemaintextClass1" class="op0">
                         <div class="beetleflex1"><p class="beetletext1">BIOMIMICRY SOLUTION</p><span class="beetlecolorChange1"> Water vapor </br> harvesting</p></div>
                         <div class="beetleflex2"><p class="beetletext2">Darkling beetles have uniquely designed wing surfaces that can collect water using nanoscale bumps and body position. 
                         </br> <span class="beetlecolorChange2">Mimicked today in fog catching nets and water bottles.</span></p></div>
                     </div>
                     <!-- rest animation -->
-                    <div  id="beetle2Ani" style="display: none;" onclick="hideBeetle()"></div>
-                    <div  id="beetle3Ani" style="display: none;" onclick="hideBeetle()"></div>
-                    <div onclick="hideBeetle()" onmouseover="movebeetle()" onmouseout="stopbeetle()"> 
-                        <img id="beetle4image" style="display: none;" src="media/image/11_Beetle_FirstPage/Beetle_BeforeHover.svg"/>
-                        <div  id="beetle4Ani" style="display: none;"></div>
+                    <div  id="beetle2Ani" class="op0" onclick="hideBeetle()"></div>
+                    <div  id="beetle3Ani" class="op0" onclick="hideBeetle()"></div>
+                    <div onclick="hideBeetle()" id="beetle4Block" style="display: none;" onmouseover="movebeetle()" onmouseout="stopbeetle()"> 
+                        <img id="beetle4image" class="op0" src="media/image/11_Beetle_FirstPage/Beetle_BeforeHover.svg"/>
+                        <div  id="beetle4Ani" class="op0"></div>
                         </div>
                     
                     <!-- text 2 -->
-                    <div id="beetlemaintextClass2" style="display: none;">
+                    <div id="beetlemaintextClass2" class="op0">
                         <p>Source: <span class="beetlecolorChange3">AskNature</span></p>
                    </div>
                    <!-- name of component -->
-                   <div id="beetlemainHeading" style="display: block;"><p class="beetletext1">SOLVE <span style="color:#ED1E79;">WATER CRISIS</span> LIKE THE</p><h1 class="beetleh1">Darkling beetle</h1></div>
+                   <div id="beetlemainHeading" class="op1"><p class="beetletext1">SOLVE <span style="color:#ED1E79;">WATER CRISIS</span> LIKE THE</p><h1 class="beetleh1">Darkling beetle</h1></div>
                 </div>
                 <!-- <div id="beetleInmainDiv"> -->
                 <div id="beetleInsubDiv" style="display: none;">
@@ -135,38 +135,38 @@
 
                     <div id="shellmainDiv">
                         <div id="shellButton">
-                            <div ><img id="shellb1" onclick="moveshellB1()" style="display: none;" src="media/image/Buttons/Shell/Shell_Black_01.svg"/></div>
-                            <div><img id="shellb2" onclick="moveshellB2()" style="display: none;" src="media/image/Buttons/Shell/Shell_Yellow_02.svg"/></div>
-                            <div><img id="shellb3" onclick="moveshellB3()" style="display: none;" src="media/image/Buttons/Shell/Shell_Yellow_03.svg"/></div>
+                            <div ><img id="shellb1" onclick="moveshellB1()" class="op0" src="media/image/Buttons/Shell/Shell_Black_01.svg"/></div>
+                            <div><img id="shellb2" onclick="moveshellB2()" class="op0" src="media/image/Buttons/Shell/Shell_Yellow_02.svg"/></div>
+                            <div><img id="shellb3" onclick="moveshellB3()" class="op0" src="media/image/Buttons/Shell/Shell_Yellow_03.svg"/></div>
                         </div>
-                        <div><img id="shellb4" onmouseover="moveshellB4()" onmouseout="stopshellB4()" src="media/image/Buttons/Shell/Shell_UP_BeforeHover.svg" /></div>
+                        <div><img id="shellb4" style="display: none;"  onclick="hideshell()" onmouseover="moveshellB4()" onmouseout="stopshellB4()" src="media/image/Buttons/Shell/Shell_UP_BeforeHover.svg" /></div>
                         <div id="shellsubDiv">
                             <!-- image of sheel -->
-                        <div id="imageshell" onclick="showshell()" onmouseover="showshellcircle()" onmouseout="stopshellcircle()" style="display: block;" >
+                        <div id="imageshell" onclick="showshell()" onmouseover="showshellcircle()" onmouseout="stopshellcircle()" class="op1" >
                             <img class="shellImage"  src="media/image/Shell.png"/>
                         </div>
                         <!-- first animation -->
-                        <div  id="shell1Ani"  style="display: block;" ></div>
-                        <div  id="shell5Ani" style="display: block;" ></div>
+                        <div  id="shell1Ani"  class="op1" ></div>
+                        <div  id="shell5Ani" class="op1" ></div>
                          <!-- text 1 -->
-                         <div id="shellmaintextClass1" style="display: none;">
+                         <div id="shellmaintextClass1" class="op0"">
                             <div class="shellflex1"><p class="shelltext1">BIOMIMICRY SOLUTION</p><span class="shellcolorChange1"> Shell protects </br> from heat</p></div>
                             <div class="shellflex2"><p class="shelltext2">The snail's shell enables it to survive extreme hot weather conditions using light deflection exteriorly and layers on insulating air interiorly. 
                             <span class="shellcolorChange2">This adaptive feature is mimicked today in the design of a lot of architectural structures.</span></p></div>
                         </div>
                         <!-- rest of animation -->
-                        <div  id="shell2Ani" style="display: none;" onclick="hideshell()"></div>
-                        <div  id="shell3Ani" style="display: none;" onclick="hideshell()"></div>
-                        <div onclick="hideshell()" onmouseover="moveShell()" onmouseout="stopShell()" > 
-                        <img id="shell4image" style="display: none;" src="media/image/05_Shell_FirstPage/Shell_BeforeHover.svg"/>
-                        <div  id="shell4Ani" style="display: none;"></div>
+                        <div  id="shell2Ani" class="op0" onclick="hideshell()"></div>
+                        <div  id="shell3Ani" class="op0"  onclick="hideshell()"></div>
+                        <div  id="shell4Block" style="display: none;" onclick="hideshell()" onmouseover="moveShell()" onmouseout="stopShell()" > 
+                        <img id="shell4image" class="op0"  src="media/image/05_Shell_FirstPage/Shell_BeforeHover.svg"/>
+                        <div  id="shell4Ani" class="op0" ></div>
                         </div>
                         <!-- text 2 -->
-                        <div id="shellmaintextClass2" style="display: none;">
+                        <div id="shellmaintextClass2" class="op0" >
                             <p style="font-size:70%;"><span class="shellcolorChange3">Source: </span> AskNature.</p>
                        </div>
                        <!-- name of component -->
-                       <div id="shellmainHeading" style="display: block;"><p class="shelltext3">SOLVE <span style="color:#FFFF00;">ENERGY WASTE</span> LIKE THE</p><h1 class="shellh1">Desert snail</h1></div>
+                       <div id="shellmainHeading" class="op1"><p class="shelltext3">SOLVE <span style="color:#FFFF00;">ENERGY WASTE</span> LIKE THE</p><h1 class="shellh1">Desert snail</h1></div>
                         </div>
                         <div id="shellInsubDiv" style="display: none;">
                             <!-- text 1 -->
@@ -223,38 +223,38 @@
                 <div>
                     <div id="squidmainDiv">
                         <div id="squidButton">
-                            <div ><img id="squidb1" style="display: none;" onclick="movesquidB1()"  src="media/image/Buttons/Squid/Squid_Black_01.svg"/></div>
-                            <div><img id="squidb2" style="display: none;" onclick="movesquidB2()" src="media/image/Buttons/Squid/Squid_Blue_02.svg"/></div>
-                            <div><img id="squidb3" style="display: none;" onclick="movesquidB3()" src="media/image/Buttons/Squid/Squid_Blue_03.svg"/></div>
+                            <div ><img id="squidb1"  class="op0" onclick="movesquidB1()"  src="media/image/Buttons/Squid/Squid_Black_01.svg"/></div>
+                            <div><img id="squidb2"  class="op0" onclick="movesquidB2()" src="media/image/Buttons/Squid/Squid_Blue_02.svg"/></div>
+                            <div><img id="squidb3" class="op0" onclick="movesquidB3()" src="media/image/Buttons/Squid/Squid_Blue_03.svg"/></div>
                         </div>
-                        <div><img id="squidb4" onmouseover="movesquidB4()" onmouseout="stopsquidB4()" src="media/image/Buttons/Squid/Squid_UP_BeforeHover.svg" /></div>
+                        <div><img id="squidb4" onclick="hidesquid()"  style="display: none;"  onmouseover="movesquidB4()" onmouseout="stopsquidB4()" src="media/image/Buttons/Squid/Squid_UP_BeforeHover.svg" /></div>
                     <div id="squidsubDiv">
                         <!-- image of squid -->
-                    <div id="imagesquid" onclick="showsquid()" onmouseover="showsquidcircle()" onmouseout="stopsquidcircle()" style="display: block;" >
+                    <div id="imagesquid" onclick="showsquid()" onmouseover="showsquidcircle()" onmouseout="stopsquidcircle()"  class="op1" >
                         <img class="squidImage"  src="media/image/Squid.png"/>
                     </div>
                     <!-- first animation -->
-                    <div  id="squid1Ani"  style="display: block;" ></div>
-                    <div  id="squid5Ani" style="display: block;" ></div>
+                    <div  id="squid1Ani"   class="op1" ></div>
+                    <div  id="squid5Ani"  class="op1" ></div>
                     <!-- text 1 -->
-                    <div id="squidmaintextClass1" style="display: none;">
+                    <div id="squidmaintextClass1"  class="op0">
                         <div class="squidflex1"><p class="squidtext1">BIOMIMICRY SOLUTION</p><span class="squidcolorChange1"> Dynamic</br>Material</p></div>
                         <div class="squidflex2"><p class="squidtext2">Squids use the pigmented cells on their skin to blend into water as an adaptation for survival.
                         <span class="squidcolorChange2">This cephalopod’s feature has been researched and applied to create fabrics that can adjust to temperature.</span></p></div>
                     </div>
                     <!-- rest of animations -->
-                    <div  id="squid2Ani" style="display: none;" onclick="hidesquid()"></div>
-                    <div  id="squid3Ani" style="display: none;" onclick="hidesquid()"></div>
-                    <div onclick="hidesquid()" onmouseover="movesquid()" onmouseout="stopsquid()" > 
-                        <img id="squid4image" style="display: none;" src="media/image/08_Sqiud_FirstPage/Squid_BeforeHover.svg"/>
-                        <div  id="squid4Ani" style="display: none;"></div>
+                    <div  id="squid2Ani"  class="op0" onclick="hidesquid()"></div>
+                    <div  id="squid3Ani"  class="op0" onclick="hidesquid()"></div>
+                    <div  id="squid4Block" style="display: none;" onclick="hidesquid()" onmouseover="movesquid()" onmouseout="stopsquid()" > 
+                        <img id="squid4image"  class="op0" src="media/image/08_Sqiud_FirstPage/Squid_BeforeHover.svg"/>
+                        <div  id="squid4Ani"  class="op0"></div>
                         </div>
                     <!-- text 2 -->
-                    <div id="squidmaintextClass2" style="display: none;">
+                    <div id="squidmaintextClass2"  class="op0">
                         <p style="font-size: 70%;"><span class="squidcolorChange3">Source: </span>Innovation.uci.edu </p>
                    </div>
                    <!-- name of component -->
-                   <div id="squidmainHeading" style="display: block;"><p class="squidtext1">SOLVE <span style="color:#0000FF;">MATERIAL POLLUTION</span> LIKE THE</p><h1 class="squidh1">Squid</h1></div>
+                   <div id="squidmainHeading"  class="op1"><p class="squidtext1">SOLVE <span style="color:#0000FF;">MATERIAL POLLUTION</span> LIKE THE</p><h1 class="squidh1">Squid</h1></div>
                     
                 </div>
                 <div id="squidInsubDiv" style="display: none;">
@@ -303,15 +303,7 @@
             </div>
             </a>
         </div>
-
-
-        
-
-                
-
     </div>
-    <button >Next</button>
-        <button >Previous</button>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="./js/lottie.js"></script>

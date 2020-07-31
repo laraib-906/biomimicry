@@ -3,7 +3,7 @@ body{
 }
 #beetlemainDiv{
     width: 700px;
-    height: 515px;
+    height: 550px !important;
     position: relative;
     /* background-color: brown; */
     overflow: hidden;

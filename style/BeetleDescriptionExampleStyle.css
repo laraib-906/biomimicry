@@ -3,14 +3,14 @@ body{
 }
 #beetleInmainDiv{
     width: 700px;
-    height: 500px;
+    height: 550px !important;
     position: relative;
     /* background-color: yellow; */
     overflow: hidden;
 }
 #beetleInsubDiv{
     width: 650px;
-    height: 500px;
+    height: 600px;
     position: relative;
     /* background-color: green; */
     margin-top: 5%;
@@ -118,7 +118,7 @@ body{
 /* beetle example css */
 #beetleInsubDiv1{
     width: 650px;
-    height: 500px;
+    height: 600px;
     position: relative;
     /* background-color: green; */
     margin-top: 5%;

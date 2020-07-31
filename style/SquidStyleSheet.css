@@ -3,7 +3,7 @@ body{
 }
 #squidmainDiv{
     width: 700px;
-    height: 500px;
+    height: 550px !important;
     position: relative;
     /* background-color: brown; */
     overflow: hidden;

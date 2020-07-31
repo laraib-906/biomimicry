@@ -3,7 +3,7 @@ body{
 }
 #shellmainDiv{
     width: 700px;
-    height: 700px;
+    height: 550px !important;
     position: relative;
     /* background-color: brown; */
     overflow: hidden;
