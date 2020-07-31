@@ -16,6 +16,17 @@
     src: url("./font/PlayfairDisplay_Font/PlayfairDisplay-Bold.ttf");
     }
 
+
+.f-a{
+    font-family: 'Avenir', sans-serif;
+    font-weight: normal;
+}
+.f-ab{
+    font-family: 'Avenir-bold', sans-serif;
+}
+.f-pb{
+    font-family: 'Playfair-bold', sans-serif;
+}
   #fullpage {
     height: 90vh;
     overflow: hidden;

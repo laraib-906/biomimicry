@@ -26,11 +26,12 @@ body{
 }
 .beetleInflex2{
     position: relative;
-    top:30px; 
+    /* top:30px;  */
     right:20px;
     font-size: 17px; 
     width: 600px;
     text-align: justify;
+    font-weight: 500;
     /* font-family: ; */
 }
 .beetleIntext1{
@@ -148,4 +149,18 @@ body{
     left:58.8%;
     top : 55.5%;
     transform: translate(-50%,-50%);
+}
+.beetleIncolorChange1 {
+    color: #ED1E79;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top: 35px;
+    line-height: 30px;
+}
+.beetleInflex1{
+    line-height: 30px;
+
+
 }

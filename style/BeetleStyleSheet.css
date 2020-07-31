@@ -1,6 +1,4 @@
-body{
-    /* background-color: black; */
-}
+
 #beetlemainDiv{
     width: 700px;
     height: 550px !important;
@@ -34,17 +32,17 @@ body{
 #beetlemaintextClass1{
     display: flex;
     flex-grow: 1;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .beetleflex1{
     width:360px;
 }
 .beetleflex2{
     position: relative;
-    top:-5px; 
-    left:195px;
+    /* top:-5px;  */
+    /* left:195px; */
     font-size: 17px; 
-    width: 430px;
+    /* width: 430px; */
     text-align: justify;
     /* font-family: ; */
 }
@@ -55,7 +53,7 @@ body{
     /* font-family: ; */
 }
 .beetletext2{
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     
 }
@@ -65,7 +63,8 @@ body{
     font-weight: bold;
     text-align: right;
     position: absolute;
-    top:35px;
+    line-height: 30px;
+    /* top:35px; */
     /* font-family: ; */
 }
 .beetlecolorChange2{
@@ -150,3 +149,8 @@ body{
         top:5%;
         right:1%
         }
+
+#beetlemaintextClass2 {
+    top: 380px;
+
+}
