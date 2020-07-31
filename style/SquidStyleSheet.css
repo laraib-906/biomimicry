@@ -14,6 +14,7 @@ body{
     position: relative;
     /* background-color: yellowgreen; */
     overflow: hidden;
+    margin-top: 5%;
 }
 #squidmainHeading{
     position: absolute;
@@ -37,7 +38,7 @@ body{
     justify-content: space-around;
 }
 .squidflex1{
-    width:170px;
+    width:190px;
 }
 .squidflex2{
     position: relative;
@@ -74,11 +75,11 @@ body{
     
 }
 #squidmaintextClass2{
-    width: 300px;
-    font-size: 12px;
+    width: 190px;
+    font-size: 20px;
     color:#0000FF;
     position: relative;
-    top:300px;
+    top:270px;
     left:230px;
 }
 .squidcolorChange3{
@@ -114,10 +115,24 @@ body{
     transform: translate(-50%,-50%);
 }
 #squid4Ani{
-    width:900px;
+    width:450px;
     position: absolute;
-    top:51%;
+    top:55%;
     left:47%;
+    transform: translate(-50%,-50%);
+}
+#squid4image{
+    width:270px;
+    position: absolute;
+    top:54%;
+    left:47%;
+    transform: translate(-50%,-50%);
+}
+#squid5Ani{
+    width: 270px;
+    position: absolute;
+    left: 57.3%;
+    top : 56%;
     transform: translate(-50%,-50%);
 }
 #squidButton{
@@ -131,3 +146,9 @@ body{
     top:60%;
     right:0%
     }
+#squidb4{
+    width:40px;
+        position: absolute;
+        top:5%;
+        right:1%
+}

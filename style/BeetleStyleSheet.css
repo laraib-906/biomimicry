@@ -3,16 +3,17 @@ body{
 }
 #beetlemainDiv{
     width: 700px;
-    height: 500px;
+    height: 515px;
     position: relative;
     /* background-color: brown; */
     overflow: hidden;
 }
 #beetlesubDiv{
     width: 650px;
-    height: 500px;
+    height: 515px;
     position: relative;
     /* background-color: yellow; */
+    margin-top: 5%;
     overflow: hidden;
 }
 #beetlemainHeading{
@@ -41,9 +42,9 @@ body{
 .beetleflex2{
     position: relative;
     top:-5px; 
-    left:190px;
+    left:195px;
     font-size: 17px; 
-    width: 410px;
+    width: 430px;
     text-align: justify;
     /* font-family: ; */
 }
@@ -100,15 +101,20 @@ body{
     top:55%;
     left:49%;
     transform: translate(-50%,-50%);
-    transition-timing-function: linear;
 }
 #beetle4Ani{
-    width:370px;
+    width:350px;
+    position: absolute;
+    top:53.5%;
+    left:60%;
+    transform: translate(-50%,-50%);
+}
+#beetle4image{
+    width:350px;
     position: absolute;
     top:53%;
-    left:50%;
+    left:60%;
     transform: translate(-50%,-50%);
-    transition-timing-function:linear;
 }
 #beetlemaintextClass2{
     width: 300px;
@@ -121,6 +127,13 @@ body{
 .beetlecolorChange3{
     color:white;
 }
+#beetle5Ani{
+    width:270px;
+    position: absolute;
+    top:53%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
 #beetleButton{
     display: flex;
     width: 50px;
@@ -131,3 +144,9 @@ body{
     top:60%;
     right:0%
     }
+#beetleb4{
+        width:40px;
+        position: absolute;
+        top:5%;
+        right:1%
+        }

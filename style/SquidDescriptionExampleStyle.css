@@ -1,12 +1,14 @@
 body{
     background-color:black;
 }
-#squidInmainDiv{
-    width: 700px;
+
+#squidInsubDiv{
+    width: 650px;
     height: 500px;
     position: relative;
-    /* background-color: purple; */
+    /* background-color: yellowgreen; */
     overflow: hidden;
+    margin-top: 5%;
 }
 #squidInmaintextClass1{
     display: flex;
@@ -18,8 +20,8 @@ body{
 }
 .squidInflex2{
     position: relative;
-    top:25px; 
-    right:3.5%;
+    top:33px; 
+    right:1%;
     font-size: 17px; 
     width: 450px;
     text-align: justify;
@@ -59,30 +61,73 @@ body{
     color:#0000FF;
     
 }
-.squidInImage{
-    width: 300px;
+#squidInImage{
+    width: 330px;
     position: absolute;
-    left:47%;
-    top :60%;
+    left:50%;
+    top :65%;
     transform: translate(-50%,-50%);
     /* height:394px; */
 }
+#squidIn1{
+    width: 500px;
+    position: absolute;
+    left:50%;
+    top :55%;
+    transform: translate(-50%,-50%);
+}
+#squidInArm{
+    width: 120px;
+    position: absolute;
+    left:15%;
+    top :55%;
+    transform: translate(-50%,-50%);
+}
+#squidInArm1{
+    width: 180px;
+    position: absolute;
+    left:11%;
+    top :58%;
+    transform: translate(-50%,-50%);
+}
 
 .squidIntext3{
-    font-size:60%;
     text-align: justify;
     color: white;
     position: absolute;
     left:50%;
-    top : 73%;
+    top : 79%;
     /* font-family: ; */
 }
 
 /* beetle example css */
-.squidRealImage{
+#squidInsubDiv1{
+    width: 650px;
+    height: 500px;
+    position: relative;
+    /* background-color: yellowgreen; */
+    overflow: hidden;
+    margin-top: 5%;
+}
+#squidRealImage{
     width: 370px;
     position: absolute;
-    left:54%;
-    top : 57%;
+    left:58.2%;
+    top : 60%;
     transform: translate(-50%,-50%);
+}
+#squidrealAni{
+    width: 370.5px;
+    position: absolute;
+    left:58.2%;
+    top : 60.5%;
+    transform: translate(-50%,-50%);
+}
+.squidIntext4{
+    text-align: justify;
+    color: white;
+    position: absolute;
+    width: 300px;
+    left:35%;
+    top : 85%;
 }

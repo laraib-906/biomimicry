@@ -5,14 +5,15 @@ body{
     width: 700px;
     height: 500px;
     position: relative;
-    /* background-color: purple; */
+    /* background-color: yellow; */
     overflow: hidden;
 }
 #beetleInsubDiv{
     width: 650px;
     height: 500px;
     position: relative;
-    /* background-color: purple; */
+    /* background-color: green; */
+    margin-top: 5%;
     overflow: hidden;
 }
 #beetleInmaintextClass1{
@@ -25,10 +26,10 @@ body{
 }
 .beetleInflex2{
     position: relative;
-    top:25px; 
-    right:10px;
+    top:30px; 
+    right:20px;
     font-size: 17px; 
-    width: 700px;
+    width: 600px;
     text-align: justify;
     /* font-family: ; */
 }
@@ -56,50 +57,95 @@ body{
     color:#ED1E79;
     
 }
-.beetleInImage{
-    width: 370px;
+#beetleInImage{
+    width: 360px;
     position: absolute;
-    left:50%;
-    top : 64%;
+    left:53%;
+    top : 60%;
     transform: translate(-50%,-50%);
     /* height:394px; */
 }
+#beetleIn1{
+    width: 430px;
+    position: absolute;
+    left:51%;
+    top : 57%;
+    transform: translate(-50%,-50%);
+}
 
 #beetleInMap{
-    width:200px;
+    width:170px;
     position: absolute;
-    left:70%;
-    top : 30%;
+    left:73.5%;
+    top :30%;
 }
 
 
 .beetleInLines{
-    width: 153px;
+    width: 152px;
     position: absolute;
-    left:49.5%;
-    top : 55%;
+    left:51%;
+    top : 51%;
 }
 .beetleIntext3{
-    font-size:60%;
     color: white;
     position: absolute;
-    left:29%;
-    top : 81%;
+    left:32%;
+    top : 78%;
     /* font-family: ; */
 }
 .beetleIntext4{
     color: white;
     font-size:70%;
     position: absolute;
-    left:2%;
-    top :65%;
+    left:4%;
+    top :62%;
     /* font-family: ; */
 }
+#lifeCycleBeetle{
+    width: 159px;
+    position: absolute;
+    left:1%;
+    top :34%;
+}
+#jsonCycleBeetle{
+    width: 161px;
+    position: absolute;
+    left:1%;
+    top :31.5%;
+}
+
 /* beetle example css */
+#beetleInsubDiv1{
+    width: 650px;
+    height: 500px;
+    position: relative;
+    background-color: green;
+    margin-top: 5%;
+    overflow: hidden;
+}
 .beetleRealImage{
     width: 370px;
     position: absolute;
-    left:57%;
+    left:58.7%;
     top : 55%;
+    transform: translate(-50%,-50%);
+}
+
+
+.beetleInflex3{
+    position: absolute;
+    top:6.5%; 
+    left:33%;
+    font-size: 17px; 
+    width: 390px;
+    text-align: justify;
+    /* font-family: ; */
+}
+#beetlerealAni{
+    width: 370px;
+    position: absolute;
+    left:58.8%;
+    top : 55.5%;
     transform: translate(-50%,-50%);
 }
