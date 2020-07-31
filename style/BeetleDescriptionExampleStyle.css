@@ -120,7 +120,7 @@ body{
     width: 650px;
     height: 500px;
     position: relative;
-    background-color: green;
+    /* background-color: green; */
     margin-top: 5%;
     overflow: hidden;
 }

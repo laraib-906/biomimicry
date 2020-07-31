@@ -48,7 +48,7 @@ var shellhoverExAnmation = bodymovin.loadAnimation({
     container: document.getElementById('shellrealAni'),
     renderer: 'svg',
     loop: true,
-    autoplay: false,
+    autoplay: true,
     path: "./media/image/07_Shell_ThirdPage/ShellPicture_AfterHover.json",
     innerHeight:100
 })
