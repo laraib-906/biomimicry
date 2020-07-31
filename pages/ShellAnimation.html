@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>The Biomimicry</title>
+    <Link rel="stylesheet" type="text/css" href="../style/shellStyleSheet.css">
+    <link rel="shortcut icon" type="imag/x-icon" href="../media/image/Browser tab icon (Favicon)/Favicon.png" />
+</head>
+
+<body>
+<div id="shellmainDiv">
+    <div id="shellButton">
+        <div ><img id="shellb1" onclick="moveshellB1()" style="display: none;" src="../media/image/Buttons/Shell/Shell_Black_01.svg"/></div>
+        <div><img id="shellb2" onclick="moveshellB2()" style="display: none;" src="../media/image/Buttons/Shell/Shell_Yellow_02.svg"/></div>
+        <div><img id="shellb3" onclick="moveshellB3()" style="display: none;" src="../media/image/Buttons/Shell/Shell_Yellow_03.svg"/></div>
+    </div>
+    <div id="shellsubDiv">
+        <!-- image of sheel -->
+    <div id="imageshell" onclick="showshell()" onmouseover="showcircle()" onmouseout="stopcircle()" style="display: block;" >
+        <img class="shellImage"  src="../media/image/Shell.png"/>
+    </div>
+    <!-- first animation -->
+    <div  id="shell1Ani"  style="display: block;" ></div>
+     <!-- text 1 -->
+     <div id="shellmaintextClass1" style="display: none;">
+        <div class="shellflex1"><p class="shelltext1">BIOMIMICRY SOLUTION</p><span class="shellcolorChange1"> Shell protects </br> from heat</p></div>
+        <div class="shellflex2"><p class="shelltext2">The shell of a desert snails helps them survive extreme heat using light reflectance and architecturally-derived, insulating layers of air. 
+        <span class="shellcolorChange2">Mimicked today in architecture structures.</span></p></div>
+    </div>
+    <!-- rest of animation -->
+    <div  id="shell2Ani" style="display: none;" onclick="hideshell()"></div>
+    <div  id="shell3Ani" style="display: none;" onclick="hideshell()"></div>
+    <div  id="shell4Ani" style="display: none;" onclick="hideshell()"></div>
+    <!-- text 2 -->
+    <div id="shellmaintextClass2" style="display: none;">
+        <p>The shell has the ability to reflect 90% of visible solar radiation, and 95% of infrared radiation.
+        </br><span class="shellcolorChange3">Copyright Biomimicry 3.8 Institute, AskNature.</span></p>
+   </div>
+   <!-- name of component -->
+   <div id="shellmainHeading" style="display: block;"><p class="shelltext3">SOLVE <span style="color:#FFFF00;">ENERGY WASTE</span> LIKE THE</p><h1 class="shellh1">Desert snail</h1></div>
+    </div>
+    </div>
+</div>
+    <script src="../js/lottie.js"></script>
+    <script src="../js/ShellScript.js"></script>
+    
+</body>
+
+</html>

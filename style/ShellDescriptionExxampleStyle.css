@@ -1,0 +1,150 @@
+body{
+    background-color:black;
+}
+#shellInmainDiv{
+    width: 700px;
+    height: 550px !important;
+    position: relative;
+    /* background-color: brown; */
+    overflow: hidden;
+    
+}
+#shellInsubDiv{
+    width: 650px;
+    height:  515px;
+    position: relative;
+    /* background-color: purple; */
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+#shellInmaintextClass1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.shellInflex1{
+    width:200px;
+}
+.shellInflex2{
+    position: relative;
+    top:-5px; 
+    left:33%;
+    font-size: 17px; 
+    width: 420px;
+    text-align: justify;
+    /* font-family: ; */
+}
+
+.shellIntext1{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left:10%;
+    /* font-family: ; */
+}
+
+.shellIntext2{
+    font-weight: bold;
+    color: white;
+    
+}
+
+
+.shellIncolorChange1{
+    color:#FFFF00;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top:35px;
+    left: 0%;
+    /* font-family: ; */
+}
+.shellIncolorChange2{
+    color:#FFFF00;
+    
+}
+#shellInImage{
+    width: 250px;
+    position: absolute;
+    left:55%;
+    top : 60%;
+    transform: translate(-50%,-50%);
+    /* height:394px; */
+}
+#shellIn1{
+    width: 530px;
+    position: absolute;
+    left:56%;
+    top : 61%;
+    transform: translate(-50%,-50%);
+}
+#shellInMap{
+    width:170px;
+    position: absolute;
+    left:73%;
+    top : 29%;
+}
+.shellInLines{
+    width: 280px;
+    position: absolute;
+    left:35%;
+    top : 78%;
+    
+}
+.shellIntext3{
+    color: white;
+    position: absolute;
+    width: 240px;
+    left:38%;
+    top : 85%;
+    /* font-family: ; */
+}
+#shellInchart{
+    width: 130px;
+    position: absolute;
+    left:8%;
+    top : 31%;
+}
+/* shell example css */
+#shellInsubDiv1{
+    width: 650px;
+    height:  515px;
+    position: relative;
+    /* background-color: purple; */
+    overflow: hidden;
+    margin-top: 5%;
+}
+#shellRealImage{
+    width: 370px;
+    position: absolute;
+    left:61.5%;
+    top : 55%;
+    transform: translate(-50%,-50%);
+}
+.shellIntext4{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left:3%;
+    /* font-family: ; */
+}
+.shellInflex3{
+    position: absolute;
+    top:6.5%; 
+    left:33%;
+    font-size: 17px; 
+    width: 390px;
+    text-align: justify;
+    /* font-family: ; */
+}
+#shellrealAni{
+    width: 370px;
+    position: absolute;
+    left:61.5%;
+    top : 55%;
+    transform: translate(-50%,-50%);
+}

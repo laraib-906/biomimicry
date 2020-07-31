@@ -1,0 +1,38 @@
+
+.carousel {
+    height: 600px !important;
+    width: 700px !important;
+}
+#sliderWrapper{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+#sliderArrow {
+    width: 900px;
+    position: absolute;
+    z-index: 0;
+    /* border: 2px solid wheat; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#sliderArrow img{
+    width: 50px !important;
+    height: 50px !important;
+    cursor: pointer;
+
+}
+
+.op0{
+    opacity: 0 !important;
+    transition: 0.3s ease-in;
+}
+.op1{
+    opacity: 1 !important;
+    transition: 0.3s ease;
+}

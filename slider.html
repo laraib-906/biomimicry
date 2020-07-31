@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">   
+    <Link rel="stylesheet" type="text/css" href="style/BeetleStyleSheet.css">
+    <Link rel="stylesheet" type="text/css" href="style/slider.css">
+    <Link rel="stylesheet" type="text/css" href="style/shellStyleSheet.css">
+    <Link rel="stylesheet" type="text/css" href="style/SquidStyleSheet.css">
+    <Link rel="stylesheet" type="text/css" href="style/BeetleDescriptionExampleStyle.css">
+    <Link rel="stylesheet" type="text/css" href="style/ShellDescriptionExxampleStyle.css">
+    <Link rel="stylesheet" type="text/css" href="style/SquidDescriptionExampleStyle.css">
+
+
+
+
+</head>
+<body>
+    <div id="sliderWrapper">
+        <div id="sliderArrow">
+            <img onclick="previous()" class="slide-btn" src="media/image/slide/SlideLeft.svg"/>
+            <img onclick="next()" class="slide-btn" src="media/image/slide/SlideRight.svg"/>
+        </div>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!">
+                <div>
+                    <div id="beetlemainDiv">
+                        <div id="beetleButton">
+                            <div ><img  class="op0" id="beetleb1" onclick="movebeetleB1()" src="media/image/Buttons/Beetle/Beetle_Black_01.svg"/></div>
+                            <div><img class="op0" id="beetleb2" onclick="movebeetleB2()" src="media/image/Buttons/Beetle/Beetle_Pink_02.svg"/></div>
+                            <div><img class="op0" id="beetleb3" onclick="movebeetleB3()" src="media/image/Buttons/Beetle/Beetle_Pink_03.svg"/></div>
+                        </div>
+                        <div><img id="beetleb4" style="display: none;" onmouseover="movebeetleB4()" onmouseout="stopbeetleB4()" onclick="hideBeetle()" src="media/image/Buttons/Beetle/Beetle_UP_BeforeHover.svg" /></div>
+                       
+                    <div id="beetlesubDiv">
+                        <!-- image of beetle -->
+                    <div id="imageBeetle" onclick="showBeetle()" onmouseover="showbeetlecircle()" onmouseout="stopbeetlecircle()" class="op1" >
+                        <img class="bettleImage"  src="media/image/Beetle.png"/>
+                    </div>
+                    <!-- first animation -->
+                    <div  id="beetle1Ani"  class="op1" ></div>
+                    <div id="beetle5Ani"  class="op1"></div>
+                    <!-- text 1 -->
+                    <div id="beetlemaintextClass1" class="op0">
+                        <div class="beetleflex1"><p class="beetletext1">BIOMIMICRY SOLUTION</p><span class="beetlecolorChange1"> Water vapor </br> harvesting</p></div>
+                        <div class="beetleflex2"><p class="beetletext2">Darkling beetles have uniquely designed wing surfaces that can collect water using nanoscale bumps and body position. 
+                        </br> <span class="beetlecolorChange2">Mimicked today in fog catching nets and water bottles.</span></p></div>
+                    </div>
+                    <!-- rest animation -->
+                    <div  id="beetle2Ani" class="op0" onclick="hideBeetle()"></div>
+                    <div  id="beetle3Ani" class="op0" onclick="hideBeetle()"></div>
+                    <div onclick="hideBeetle()" id="beetle4Block" style="display: none;" onmouseover="movebeetle()" onmouseout="stopbeetle()"> 
+                        <img id="beetle4image" class="op0" src="media/image/11_Beetle_FirstPage/Beetle_BeforeHover.svg"/>
+                        <div  id="beetle4Ani" class="op0"></div>
+                        </div>
+                    
+                    <!-- text 2 -->
+                    <div id="beetlemaintextClass2" class="op0">
+                        <p>Source: <span class="beetlecolorChange3">AskNature</span></p>
+                   </div>
+                   <!-- name of component -->
+                   <div id="beetlemainHeading" class="op1"><p class="beetletext1">SOLVE <span style="color:#ED1E79;">WATER CRISIS</span> LIKE THE</p><h1 class="beetleh1">Darkling beetle</h1></div>
+                </div>
+                <!-- <div id="beetleInmainDiv"> -->
+                <div id="beetleInsubDiv" style="display: none;">
+                    <!-- text 1 -->
+                    <div id="beetleInmaintextClass1">
+                        <div class="beetleInflex1"><p class="beetleIntext1">BIOMIMICRY SOLUTION</p><span class="beetleIncolorChange1"> Water vapor </br>harvesting</p></div>
+                        <div class="beetleInflex2"><p class="beetleIntext2"><span class="beetleIncolorChange2">Darkling beetle</span> 
+                        belongs to the family of beetles called Tenebrionidae. This family of beetles has over 20,000 species distributed in different biomes.
+</p></div>
+                    </div>
+                    <!-- beetle image -->
+                    <div onmouseover="movebeetleIn()" onmouseout="stopbeetleIn()" >
+                        <img id="beetleInImage" style="display:block;" src="media/image/12_Beetle_SecondPage/Beetle_BeforeHover.png"/>
+                        <div id="beetleIn1" style="display: none;"></div>
+                    </div>
+                    <!-- beetle Map -->
+                    <div  class="beetleInMapContainer">
+                        
+                        <img id="beetleInMap"  onmouseover="moveBeetleMap()" onmouseout="stopBeetleMap()" src="media/image/12_Beetle_SecondPage/Beetle_Map_BeforeHover.svg"/>
+                        
+                    </div>
+                    <!-- Lines -->
+                    <div   >
+                        <img class="beetleInLines"  src="media/image/12_Beetle_SecondPage/Beetle_Lines.svg"/>
+                        
+                    </div>
+                    <!-- life cycle -->
+                    <div onmouseover="movebeetlecycle()" onmouseout="stopbeetlecycle()">
+                        <img id="lifeCycleBeetle" style="display: block;" src="media/image/12_Beetle_SecondPage/Beetle_LifeCicle_BeforeHover.svg"/>
+                        <div id="jsonCycleBeetle" style="display: none;"></div>
+                    </div>
+                    <!-- text2 -->
+                    <div><p class="beetleIntext3" style="font-size:70%;">Copyright: <span class="beetleIncolorChange2">Wikipedia</span></p></div>
+                    <!-- text 3 -->
+                    <div ><p class="beetleIntext4" style="font-size: 80%;">
+                        Kingdom: <span class="beetleIncolorChange2">Animalia</span></br>
+                        Class: <span class="beetleIncolorChange2">Insecta</span></br>
+                        Order: <span class="beetleIncolorChange2">Coleoptera</span></br>
+                        Suborder:<span class="beetleIncolorChange2">Polyphaga</span></br>
+                        Infraorder:	<span class="beetleIncolorChange2">Cucujiformia</span></br>
+                        Family:<span class="beetleIncolorChange2">Tenebrionidae</span>	 
+                    </p></div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div id="beetleInmainDiv"> -->
+                    <div id="beetleInsubDiv1" style="display: none;">
+                        <!-- text 1 -->
+                        <div id="beetleInmaintextClass1">
+                            <div class="beetleInflex1"><p class="beetleIntext1">BIOMIMICRY SOLUTION</p><span class="beetleIncolorChange1"> Water vapor </br> harvesting</p></div>
+                            <div class="beetleInflex2"><p class="beetleIntext2">The <span class="beetleIncolorChange2">Dew Bank</span> 
+                            mimics the beetle’s technique in design. This device has smart layouts that enable the steel body to collect morning dew and directly channel it into the bottle. This device is a perfect tool for desert nomads.
+                            </div>
+                        <!-- beetle example real image -->
+                        <div onmouseover="movebeetleInEx()" onmouseout="stopbeetleInEx()" >
+                            <img class="beetleRealImage"  src="media/image/13_Beetle_ThirdPage/Beetle_BeforeHover.jpg"/>
+                            <div  id="beetlerealAni"   style="display:none;" ></div>
+                        </div>
+                        <!-- text2 -->
+                        <div><p class="beetleIntext3" style="font-size: 70%; top: 80%;">
+                            Copyright: <span class="beetleIncolorChange2">Yanko Design</span>
+                            Source: <span class="beetleIncolorChange2">Yanko Design</span>
+                        </p></div>
+                      </div>  
+                    </div>
+                <!-- </div> -->
+                </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#two!">
+                <div>
+
+                    <div id="shellmainDiv">
+                        <div id="shellButton">
+                            <div ><img id="shellb1" onclick="moveshellB1()" class="op0" src="media/image/Buttons/Shell/Shell_Black_01.svg"/></div>
+                            <div><img id="shellb2" onclick="moveshellB2()" class="op0" src="media/image/Buttons/Shell/Shell_Yellow_02.svg"/></div>
+                            <div><img id="shellb3" onclick="moveshellB3()" class="op0" src="media/image/Buttons/Shell/Shell_Yellow_03.svg"/></div>
+                        </div>
+                        <div><img id="shellb4" style="display: none;"  onclick="hideshell()" onmouseover="moveshellB4()" onmouseout="stopshellB4()" src="media/image/Buttons/Shell/Shell_UP_BeforeHover.svg" /></div>
+                        <div id="shellsubDiv">
+                            <!-- image of sheel -->
+                        <div id="imageshell" onclick="showshell()" onmouseover="showshellcircle()" onmouseout="stopshellcircle()" class="op1" >
+                            <img class="shellImage"  src="media/image/Shell.png"/>
+                        </div>
+                        <!-- first animation -->
+                        <div  id="shell1Ani"  class="op1" ></div>
+                        <div  id="shell5Ani" class="op1" ></div>
+                         <!-- text 1 -->
+                         <div id="shellmaintextClass1" class="op0"">
+                            <div class="shellflex1"><p class="shelltext1">BIOMIMICRY SOLUTION</p><span class="shellcolorChange1"> Shell protects </br> from heat</p></div>
+                            <div class="shellflex2"><p class="shelltext2">The snail's shell enables it to survive extreme hot weather conditions using light deflection exteriorly and layers on insulating air interiorly. 
+                            <span class="shellcolorChange2">This adaptive feature is mimicked today in the design of a lot of architectural structures.</span></p></div>
+                        </div>
+                        <!-- rest of animation -->
+                        <div  id="shell2Ani" class="op0" onclick="hideshell()"></div>
+                        <div  id="shell3Ani" class="op0"  onclick="hideshell()"></div>
+                        <div  id="shell4Block" style="display: none;" onclick="hideshell()" onmouseover="moveShell()" onmouseout="stopShell()" > 
+                        <img id="shell4image" class="op0"  src="media/image/05_Shell_FirstPage/Shell_BeforeHover.svg"/>
+                        <div  id="shell4Ani" class="op0" ></div>
+                        </div>
+                        <!-- text 2 -->
+                        <div id="shellmaintextClass2" class="op0" >
+                            <p style="font-size:70%;"><span class="shellcolorChange3">Source: </span> AskNature.</p>
+                       </div>
+                       <!-- name of component -->
+                       <div id="shellmainHeading" class="op1"><p class="shelltext3">SOLVE <span style="color:#FFFF00;">ENERGY WASTE</span> LIKE THE</p><h1 class="shellh1">Desert snail</h1></div>
+                        </div>
+                        <div id="shellInsubDiv" style="display: none;">
+                            <!-- text 1 -->
+                            <div id="maintextClass1">
+                                <div class="shellInflex1"><p class="shellIntext1">BIOMIMICRY SOLUTION</p><span class="shellIncolorChange1"> Shell protects</br> from heat </p></div>
+                                <div class="shellInflex2"><p class="shellIntext2"><span class="shellIncolorChange2">Sphincterochila boissieri</span> 
+                              is a specie of land snail that breathes air. It belongs to the family Sphincterochilidae and genus Sphincterochila. This snail is a terrestrial pulmonate gastropod mollusk well adapted to desert environments.
+                                </div>
+                            <!-- shell image -->
+                            <div onmouseover="moveShellIn()" onmouseout="stopShellIn()">
+                                <img id="shellInImage"  style="display: block;" src="./media/image/06_Shell_SecondPage/Shell_BeforeHover.png"/>
+                            <div  id="shellIn1"   style="display:none;" ></div>
+                            </div>
+                            <!-- shell Map -->
+                            <div >
+                                <img id="shellInMap"  onmouseover="moveShellMap()" onmouseout="stopShellMap()" src="./media/image/06_Shell_SecondPage/Shell_Map_BeforeHover.svg"/>
+                             </div>
+                            <!-- Lines -->
+                            <div >
+                                <img class="shellInLines"  src="media/image/06_Shell_SecondPage/Shell_Lines.svg"/>
+                            </div>
+                            <!-- shell chart -->
+                            <div >
+                                <img id="shellInchart" onmouseover="moveShellchart()" onmouseout="stopShellchart()" src="media/image/06_Shell_SecondPage/ShellChart_BeforeHover.svg"/>
+                            </div>
+                            <!-- text2 -->
+                            <div><p class="shellIntext3" style="font-size: 70%;">Copyright: <span class="shellIncolorChange2">Wikipedia</span></p></div>
+                            
+                            </div>
+                        </div>
+                        <div>
+                            <div id="shellInsubDiv1">
+                                <!-- text 1 -->
+                                <div id="shellInmaintextClass1">
+                                    <div class="shellInflex1"><p class="shellIntext4">BIOMIMICRY SOLUTION</p><span class="shellIncolorChange1"> Shell protects</br> from heat </p></div>
+                                    <div class="shellInflex3" ><p class="shellIntext2"><span class="shellIncolorChange2">Yakhchāl</span> 
+                                    is an ancient Persian evaporative cooler. It has a dome shape structure and stored ice and food even before refrigerators were invented.
+
+                                    </div>
+                                </div>
+                                <!-- shell example real image -->
+                                <div onmouseover="moveShellInEx()" onmouseout="stopShellInEx()">
+                                    <img id="shellRealImage"  style="display: block;" src="./media/image/07_Shell_ThirdPage/Shell_BeforeHover.png"/>
+                                <div  id="shellrealAni"   style="display:none;" ></div>
+                                </div>
+                                <!-- text2 -->
+                                <div><p class="shellIntext3" style="left:36%;font-size: 70%;">Copyright: <span class="shellIncolorChange2"> Wikipedia</span> Credit: <span class="shellIncolorChange2">Wikipedia</span> Ice House (exterior) Meybod Iran</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </a>
+            <a class="carousel-item" href="#three!">
+                <div>
+                    <div id="squidmainDiv">
+                        <div id="squidButton">
+                            <div ><img id="squidb1"  class="op0" onclick="movesquidB1()"  src="media/image/Buttons/Squid/Squid_Black_01.svg"/></div>
+                            <div><img id="squidb2"  class="op0" onclick="movesquidB2()" src="media/image/Buttons/Squid/Squid_Blue_02.svg"/></div>
+                            <div><img id="squidb3" class="op0" onclick="movesquidB3()" src="media/image/Buttons/Squid/Squid_Blue_03.svg"/></div>
+                        </div>
+                        <div><img id="squidb4" onclick="hidesquid()"  style="display: none;"  onmouseover="movesquidB4()" onmouseout="stopsquidB4()" src="media/image/Buttons/Squid/Squid_UP_BeforeHover.svg" /></div>
+                    <div id="squidsubDiv">
+                        <!-- image of squid -->
+                    <div id="imagesquid" onclick="showsquid()" onmouseover="showsquidcircle()" onmouseout="stopsquidcircle()"  class="op1" >
+                        <img class="squidImage"  src="media/image/Squid.png"/>
+                    </div>
+                    <!-- first animation -->
+                    <div  id="squid1Ani"   class="op1" ></div>
+                    <div  id="squid5Ani"  class="op1" ></div>
+                    <!-- text 1 -->
+                    <div id="squidmaintextClass1"  class="op0">
+                        <div class="squidflex1"><p class="squidtext1">BIOMIMICRY SOLUTION</p><span class="squidcolorChange1"> Dynamic</br>Material</p></div>
+                        <div class="squidflex2"><p class="squidtext2">Squids use the pigmented cells on their skin to blend into water as an adaptation for survival.
+                        <span class="squidcolorChange2">This cephalopod’s feature has been researched and applied to create fabrics that can adjust to temperature.</span></p></div>
+                    </div>
+                    <!-- rest of animations -->
+                    <div  id="squid2Ani"  class="op0" onclick="hidesquid()"></div>
+                    <div  id="squid3Ani"  class="op0" onclick="hidesquid()"></div>
+                    <div  id="squid4Block" style="display: none;" onclick="hidesquid()" onmouseover="movesquid()" onmouseout="stopsquid()" > 
+                        <img id="squid4image"  class="op0" src="media/image/08_Sqiud_FirstPage/Squid_BeforeHover.svg"/>
+                        <div  id="squid4Ani"  class="op0"></div>
+                        </div>
+                    <!-- text 2 -->
+                    <div id="squidmaintextClass2"  class="op0">
+                        <p style="font-size: 70%;"><span class="squidcolorChange3">Source: </span>Innovation.uci.edu </p>
+                   </div>
+                   <!-- name of component -->
+                   <div id="squidmainHeading"  class="op1"><p class="squidtext1">SOLVE <span style="color:#0000FF;">MATERIAL POLLUTION</span> LIKE THE</p><h1 class="squidh1">Squid</h1></div>
+                    
+                </div>
+                <div id="squidInsubDiv" style="display: none;">
+                    <!-- text 1 -->
+                    <div id="squidInmaintextClass1">
+                        <div class="squidInflex1"><p class="squidIntext1">BIOMIMICRY SOLUTION</p><span class="squidIncolorChange1"> Dynamic</br>Material </p></div>
+                        <div class="squidInflex2"><p class="squidIntext2"><span class="squidIncolorChange2">Squid</span> 
+                        are cephalopods belonging to the superorder Decapodiformes. Squids have distinctive features like its large eyes,
+                         eight arms, elongated bodies, and two tentacles. They have a very soft body like octopuses and a small internal skeleton for support. Similar to most cephalopods, they have a mantle, distinct head, and are bilaterally symmetrical.
+                        </p></div>
+                    <!-- squid image -->
+                    
+                    <div onmouseover="movesquidIn()" onmouseout="stopsquidIn()">
+                        <img id="squidInImage"  style="display: block;" src="./media/image/09_Squid_SecondPage/Squid_BeforeHover.png"/>
+                    <div  id="squidIn1"   style="display:none;" ></div>
+                    </div>
+                    <!-- squid arm -->
+                    <div onmouseover="moveSquidArm()" onmouseout="stopSquidArm()">
+                        <img id="squidInArm"  style="display: block;" src="./media/image/09_Squid_SecondPage/Squid_Arm_BeforeHover.svg"/>
+                    <div  id="squidInArm1"   style="display:none;" ></div>
+                    </div>
+                    <!-- text2 -->
+                    <div><p class="squidIntext3" style="font-size:70%;">Copyright: <span class="squidIncolorChange2">Wikipedia</span></p></div>
+                    
+                    
+                    </div>
+                    </div>
+                    <div id="squidInsubDiv1" style="display: none;">
+                        <!-- text 1 -->
+                        <div id="squidInmaintextClass1">
+                            <div class="squidInflex1"><p class="squidIntext1">BIOMIMICRY SOLUTION</p><span class="squidIncolorChange1"> Dynamic</br>Material </p></div>
+                            <div class="squidInflex2"><p class="squidIntext2">The <span class="squidIncolorChange2"> materials</span> 
+                             mimic the cephalopod’s ability to camouflage. Currently, Alon Gorodetsky’s lab is advancing in the knowledge base of reflectins and the application of proteins for renewable energy, bioelectronics, and camouflage utilization.
+
+                            </p></div>
+                        <!-- squid example real image -->
+                        <div onmouseover="movesquidInEx()" onmouseout="stopsquidInEx()">
+                            <img id="squidRealImage"  style="display: block;" src="./media/image/10_Squid_ThirdPage/Squid_BeforeHover.png"/>
+                        <div  id="squidrealAni"   style="display:none;" ></div>
+                        </div>
+                        <!-- text2 -->
+                        <div><p class="squidIntext4" style="font-size:70%;">Copyright<span class="squidIncolorChange2"> The Washington Post, innovation.uci.ed</span></br>Alon Gorodetsky, Ph.D., manages a team of 20 researchers within the Gorodetsky Lab, which is now located in Calit2 on the UCI campus.</p></div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="./js/lottie.js"></script>
+<script src="./js/BeetleScript.js"></script>
+<script src="./js/ShellScript.js"></script>
+<script src="./js/SquidScript.js"></script>
+<script src="./js/BeetleDescriptionScript.js"></script>
+<script src="js/ShellDescriptionScript.js"></script>
+<script src="./js/SquidDescriptionScript.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    var options = {
+    fullWidth: true,
+  }        
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, options);
+    });
+    function next(){
+        $('.carousel').carousel('next');
+    }
+    function previous(){
+        $('.carousel').carousel('prev');
+    }
+</script>
+</html>

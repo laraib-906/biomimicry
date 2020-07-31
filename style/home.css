@@ -117,38 +117,8 @@
     bottom: 10px;
 }
 /* 2nd section */
-#sSec{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-#sSec h2{
-    font-family: 'Avenir-bold', sans-serif;
-    font-size: 50px;
-    font-weight: bolder;
-    width: 800px;
-}
-#sSec p{
-    font-family: 'Avenir', sans-serif;
-    font-size: 50px;
-    width: 800px;
-    color: #ffff00;
-    /* margin-top: -70px; */
 
-}
-
-#sSec h2 span:after {
-    content: "";
-    width: 300px;
-    height: 6px;
-    position: absolute;
-    margin-top: 30px;
-    background-color: #ED1E79;
-    margin-left: -300px;
-}
 
 
 /* new css */

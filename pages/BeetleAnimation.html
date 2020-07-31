@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="imag/x-icon" href="../media/image/Browser tab icon (Favicon)/Favicon.png" />
+    <title>The Biomimicry</title>
+    <Link rel="stylesheet" type="text/css" href="../style/BeetleStyleSheet.css">
+</head>
+
+<body>
+    <div id="beetlemainDiv">
+        <div id="beetleButton">
+            <div ><img style="display: none;" id="beetleb1" onclick="movebeetleB1()" src="../media/image/Buttons/Beetle/Beetle_Black_01.svg"/></div>
+            <div><img style="display: none;" id="beetleb2" onclick="movebeetleB2()" src="../media/image/Buttons/Beetle/Beetle_Pink_02.svg"/></div>
+            <div><img style="display: none;" id="beetleb3" onclick="movebeetleB3()" src="../media/image/Buttons/Beetle/Beetle_Pink_03.svg"/></div>
+        </div>
+    <div id="beetlesubDiv">
+        <!-- image of beetle -->
+    <div id="imageBeetle" onclick="showBeetle()" onmouseover="showcircle()" onmouseout="stopcircle()" style="display: block;" >
+        <img class="bettleImage"  src="../media/image/Beetle.png"/>
+    </div>
+    <!-- first animation -->
+    <div  id="beetle1Ani"  style="display: block;" ></div>
+    <!-- text 1 -->
+    <div id="beetlemaintextClass1" style="display: none;">
+        <div class="beetleflex1"><p class="beetletext1">BIOMIMICRY SOLUTION</p><span class="beetlecolorChange1"> Water vapor </br> harvesting</p></div>
+        <div class="beetleflex2"><p class="beetletext2">Surfaces of wing covers on some darkling beetles gather water using nanoscale bumps and body position.
+        </br> <span class="beetlecolorChange2">Mimicked today in fog catching nets and water bottles.</span></p></div>
+    </div>
+    <!-- rest animation -->
+    <div  id="beetle2Ani" style="display: none;" onclick="hideBeetle()"></div>
+    <div  id="beetle3Ani" style="display: none;" onclick="hideBeetle()"></div>
+    <div  id= "beetle4Ani" style="display: none;" onclick="hideBeetle()"></div>
+    <!-- text 2 -->
+    <div id="beetlemaintextClass2" style="display: none;">
+        <p>Micro-sized grooves or bumps on the beetle’s hardened forewings can help condense and direct water toward the beetle’s awaiting mouth.
+        </br><span class="beetlecolorChange3">Copyright https/asknature.org/</span></p>
+   </div>
+   <!-- name of component -->
+   <div id="beetlemainHeading" style="display: block;"><p class="beetletext1">SOLVE <span style="color:#ED1E79;">WATER CRISIS</span> LIKE THE</p><h1 class="beetleh1">Darkling beetle</h1></div>
+    </div>
+</div>
+    <!-- script -->
+    <script src="../js/lottie.js"></script>
+    <script src="../js/BeetleScript.js"></script>
+    
+</body>
+
+</html>

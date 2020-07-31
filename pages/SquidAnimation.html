@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>The Biomimicry</title>
+    <Link rel="stylesheet" type="text/css" href="../style/SquidStyleSheet.css">
+    <link rel="shortcut icon" type="imag/x-icon" href="../media/image/Browser tab icon (Favicon)/Favicon.png" />
+</head>
+
+<body>
+    <div id="squidmainDiv">
+        <div id="squidButton">
+            <div ><img id="squidb1" style="display: none;" onclick="movesquidB1()"  src="../media/image/Buttons/Squid/Squid_Black_01.svg"/></div>
+            <div><img id="squidb2" style="display: none;" onclick="movesquidB2()" src="../media/image/Buttons/Squid/Squid_Blue_02.svg"/></div>
+            <div><img id="squidb3" style="display: none;" onclick="movesquidB3()" src="../media/image/Buttons/Squid/Squid_Blue_03.svg"/></div>
+        </div>
+    <div id="squidsubDiv">
+        <!-- image of squid -->
+    <div id="imagesquid" onclick="showsquid()" onmouseover="showcircle()" onmouseout="stopcircle()" style="display: block;" >
+        <img class="squidImage"  src="../media/image/Squid.png"/>
+    </div>
+    <!-- first animation -->
+    <div  id="squid1Ani"  style="display: block;" ></div>
+    <!-- text 1 -->
+    <div id="squidmaintextClass1" style="display: none;">
+        <div class="squidflex1"><p class="squidtext1">BIOMIMICRY SOLUTION</p><span class="squidcolorChange1"> Dynamic</br>Material</p></div>
+        <div class="squidflex2"><p class="squidtext2">A squid uses pigment-containing cells in its skin to blend in the water.
+        <span class="squidcolorChange2">Researchers are studying cephalopods have used this process to create fabric that is temperature adjusting.</span></p></div>
+    </div>
+    <!-- rest of animations -->
+    <div  id="squid2Ani" style="display: none;" onclick="hidesquid()"></div>
+    <div  id="squid3Ani" style="display: none;" onclick="hidesquid()"></div>
+    <div  id= "squid4Ani" style="display: none;" onclick="hidesquid()"></div>
+    <!-- text 2 -->
+    <div id="squidmaintextClass2" style="display: none;">
+        <p>Micro-sized grooves or bumps on the beetle’s hardened 
+        </br><span class="squidcolorChange3">Copyright https/washingtonpost.com/</span></p>
+   </div>
+   <!-- name of component -->
+   <div id="squidmainHeading" style="display: block;"><p class="squidtext1">SOLVE <span style="color:#0000FF;">MATERIAL POLLUTION</span> LIKE THE</p><h1 class="squidh1">Squid</h1></div>
+    </div>
+    </div>
+</div>
+    <script src="../js/lottie.js"></script>
+    <script src="../js/SquidScript.js"></script>
+    
+</body>
+
+</html>

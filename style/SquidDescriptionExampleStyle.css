@@ -1,0 +1,133 @@
+body{
+    background-color:black;
+}
+
+#squidInsubDiv{
+    width: 650px;
+    height: 500px;
+    position: relative;
+    /* background-color: yellowgreen; */
+    overflow: hidden;
+    margin-top: 5%;
+}
+#squidInmaintextClass1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.squidInflex1{
+    width:200px;
+}
+.squidInflex2{
+    position: relative;
+    top:33px; 
+    right:1%;
+    font-size: 17px; 
+    width: 450px;
+    text-align: justify;
+    /* font-family: ; */
+}
+.squidIntext1{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left:-1%;
+    /* font-family: ; */
+}
+
+.squidIntext2{
+    font-weight: bold;
+    color: white;
+    
+}
+.squidIntext3{
+    font-size: 13.6px;
+    font-weight: bold;
+    color: white;
+    /* font-family: ; */
+}
+.squidIncolorChange1{
+    color:#0000FF;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    top:35px;
+    left:7.5%;
+    /* font-family: ; */
+}
+.squidIncolorChange2{
+    color:#0000FF;
+    
+}
+#squidInImage{
+    width: 330px;
+    position: absolute;
+    left:50%;
+    top :65%;
+    transform: translate(-50%,-50%);
+    /* height:394px; */
+}
+#squidIn1{
+    width: 500px;
+    position: absolute;
+    left:50%;
+    top :55%;
+    transform: translate(-50%,-50%);
+}
+#squidInArm{
+    width: 120px;
+    position: absolute;
+    left:15%;
+    top :55%;
+    transform: translate(-50%,-50%);
+}
+#squidInArm1{
+    width: 180px;
+    position: absolute;
+    left:11%;
+    top :58%;
+    transform: translate(-50%,-50%);
+}
+
+.squidIntext3{
+    text-align: justify;
+    color: white;
+    position: absolute;
+    left:50%;
+    top : 79%;
+    /* font-family: ; */
+}
+
+/* beetle example css */
+#squidInsubDiv1{
+    width: 650px;
+    height: 500px;
+    position: relative;
+    /* background-color: yellowgreen; */
+    overflow: hidden;
+    margin-top: 5%;
+}
+#squidRealImage{
+    width: 370px;
+    position: absolute;
+    left:58.2%;
+    top : 60%;
+    transform: translate(-50%,-50%);
+}
+#squidrealAni{
+    width: 370.5px;
+    position: absolute;
+    left:58.2%;
+    top : 60.5%;
+    transform: translate(-50%,-50%);
+}
+.squidIntext4{
+    text-align: justify;
+    color: white;
+    position: absolute;
+    width: 300px;
+    left:35%;
+    top : 85%;
+}
