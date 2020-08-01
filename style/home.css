@@ -52,14 +52,14 @@
 }
 #navbar-logo{
     width: 30px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
 
 }
 #navbarList{
     display: flex;
-    font-size: 14px;
+    font-size: 18px;
 
 }
 #navbarList p {
@@ -72,12 +72,12 @@
 }
 #navbarLine:after {
     content: "";
-    width: 55px;
+    width: 75px;
     height: 2px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 25px;
     background-color: #ffff00;
-    margin-left: -55px;
+    margin-left: -75px;
 }
 /* first section */
 #fSec{
@@ -94,28 +94,35 @@
     text-transform: uppercase;
 }
 .fsec-text:nth-child(1){
-    font-size: 100px;
+    font-size: 200px;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 0px;
     /* border: 1px solid lightcyan; */
 }
 .fsec-text:nth-child(2){
-    font-size: 100px;
-    margin-top: -15px;
+    font-size: 200px;
+    margin-top: -70px;
+    /* line-height: px; */ 
+    /* border: 1px solid lightcyan; */
+    padding: 0;
+
 }
 .fsec-text:nth-child(3){
-    font-size: 30px;
-    font-family: 'Avenir', sans-serif;
+    font-size: 40px;
+    font-family: 'Avenir-bold', sans-serif;
     color: white;
     font-weight: bold;
     margin-top:10px;
     /* margin-left: 30px; */
-
+}
+.fsec-text:nth-child(3) span{
+    color: #ffff00;
 }
 .h-the{
-    font-size: 20px;
+    font-size: 36px;
     color: white;
-    margin-top: 30px;
+    margin-top: 73px;
     font-family: 'Avenir-bold', sans-serif;
     margin-right: 10px;
 }

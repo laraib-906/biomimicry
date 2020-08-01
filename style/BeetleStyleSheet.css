@@ -1,17 +1,20 @@
 
 #beetlemainDiv{
-    width: 700px;
-    height: 550px !important;
+    width: 100% !important;
+    height: 100% !important;
+    /* background-color: yellow; */
     position: relative;
     /* background-color: brown; */
     overflow: hidden;
 }
 #beetlesubDiv{
-    width: 650px;
-    height: 515px;
+    width: 1200px;
+    height: 700px;
+
     position: relative;
     /* background-color: yellow; */
-    margin-top: 5%;
+    /* background-color: darkgray; */
+    /* margin-top: 5%; */
     overflow: hidden;
 }
 #beetlemainHeading{
@@ -25,8 +28,11 @@
 .beetleh1{
     position: relative;
     top:-40px;
-    font-size: 50px;
+    font-size: 90px;
     color:#ED1E79;
+    width: 700px;
+    margin-left: -150px;
+    margin-top: 31px;
     /* font-family: ; */
 }
 #beetlemaintextClass1{
@@ -37,35 +43,46 @@
 .beetleflex1{
     width:360px;
 }
+.beetleflex1 p {
+    font-size: 27px !important;
+    font-weight: bold;
+    color: white;
+    width: 320px;
+
+}
 .beetleflex2{
     position: relative;
     /* top:-5px;  */
     /* left:195px; */
-    font-size: 17px; 
+    font-size: 30px; 
     /* width: 430px; */
     text-align: justify;
+    margin-top: 60px;
+    margin-left: 20px;
     /* font-family: ; */
 }
 .beetletext1{
-    font-size: 13.6px;
+    font-size: 27px !important;
     font-weight: bold;
     color: white;
-    /* font-family: ; */
+    width: 500px;
+    margin-left: -150px;
 }
 .beetletext2{
     /* font-weight: bold; */
     color: white;
+    width: 800px;
+    line-height: 1;
     
 }
 .beetlecolorChange1{
-    color:#ED1E79;
-    font-size: 30px;
+    color: #ED1E79;
+    font-size: 55px;
     font-weight: bold;
     text-align: right;
     position: absolute;
-    line-height: 30px;
-    /* top:35px; */
-    /* font-family: ; */
+    line-height: 55px;
+    /* top: 35px; */
 }
 .beetlecolorChange2{
     color:#ED1E79;
@@ -73,24 +90,24 @@
 }
 .bettleImage{
     position: absolute;
-    width: 370px;
+    width: 600px;
     left: 46%;
-    top : 60%;
+    top : 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
 }
 #beetle1Ani{
-    width: 270px;
+    width: 400px;
     position: absolute;
-    left: 50%;
-    top : 53%;
+    left: 55%;
+    top : 40%;
     transform: translate(-50%,-50%);
 }
 #beetle2Ani{
-    width:270px;
+    width: 400px;
     position: absolute;
-    top:53%;
-    left:50%;
+    left: 55%;
+    top : 40%;
     transform: translate(-50%,-50%);
     transition-timing-function: ease-in-out;
 }
@@ -102,55 +119,74 @@
     transform: translate(-50%,-50%);
 }
 #beetle4Ani{
-    width:350px;
+    width: 500px;
     position: absolute;
-    top:53.5%;
-    left:60%;
+    top: 61%;
+    left: 56%;
     transform: translate(-50%,-50%);
 }
 #beetle4image{
-    width:350px;
+    width: 500px;
     position: absolute;
-    top:53%;
-    left:60%;
+    top: 61%;
+    left: 56%;
     transform: translate(-50%,-50%);
 }
 #beetlemaintextClass2{
     width: 300px;
-    font-size: 12px;
-    color:#ED1E79;
+    font-size: 20px !important;
+    color: #fff;
     position: relative;
-    top:300px;
-    left:230px;
+    top: 300px;
+    left: 230px;
+    top: 450px !important;
 }
 .beetlecolorChange3{
     color:white;
 }
 #beetle5Ani{
-    width:270px;
+    width: 386px;
     position: absolute;
-    top:53%;
-    left:50%;
+    top: 41%;
+    left: 56%;
     transform: translate(-50%,-50%);
 }
 #beetleButton{
     display: flex;
-    width: 50px;
-    height: 200px;
+    /* width: 50px; */
+    height: auto;
     justify-content: space-evenly;
     flex-direction: column;
     position: absolute;
-    top:60%;
-    right:0%
+    top:50%;
+    right:5%;
+    /* transform: translateY(-50%); */
+    /* background-color: #fff; */
     }
 #beetleb4{
-        width:40px;
-        position: absolute;
-        top:5%;
-        right:1%
+    width: 57px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
         }
 
 #beetlemaintextClass2 {
     top: 380px;
 
+}
+#beetleButton img{
+    width: 80px;  
+}
+#beetleButton div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+#beetleButton p{
+    font-family: 'Avenir-bold', sans-serif;
+    color: #ED1E79;
+    margin-right: 10px;
+    text-transform: capitalize !important;
+     
 }

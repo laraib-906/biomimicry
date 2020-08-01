@@ -95,13 +95,14 @@ function showBeetle(){
     var para2 = document.getElementById("beetlemaintextClass2")
     var heading = document.getElementById("beetlemainHeading")
     var ImageBlock = document.getElementById("beetle4Block")
-
+    var textBtn = document.getElementsByClassName("btn-text")[0]
         hideElement(img)
         hideElement(div1)
         hideElement(heading)
         hideElement(beetleImage)
         hideElement(div5)
 
+        showElement(textBtn )
         showElement(div2 )
         showElement(beb1 )
         showElement(beb2 )
@@ -138,7 +139,7 @@ function showBeetle(){
 function hideBeetle(){
     showSlideBtn("beetleb4")
     showSecBeetle(0)
-
+    var textBtn = document.getElementsByClassName("btn-text")
     var img= document.getElementById("imageBeetle")
     var div1=document.getElementById("beetle1Ani")
     var div2=document.getElementById("beetle2Ani")
@@ -152,7 +153,8 @@ function hideBeetle(){
     var ImageBlock = document.getElementById("beetle4Block")
     ImageBlock.style.display = "none"
 
-
+    for(let i of textBtn)
+        hideElement(i)
     showElement(img )
     showElement(div1 )
     showElement(heading )
@@ -190,18 +192,32 @@ function stopbeetle(){
     beetleImage.style.display="block"
     beetleanimation4.stop()
 }
+function btnText (index,className){
+    var textBtn = document.getElementsByClassName(className)
+    for(i=0 ; i<textBtn.length ; i++){
+        if(i == index){
+            showElement(textBtn[i] )
+        }else{
+            hideElement(textBtn[i])
+
+        }
+    }
+}
 // func to hide
 function movebeetleB1(){
     beb1.src="media/image/Buttons/Beetle/Beetle_Black_01.svg" 
     beb2.src="media/image/Buttons/Beetle/Beetle_Pink_02.svg"
     beb3.src="media/image/Buttons/Beetle/Beetle_Pink_03.svg"
     showSecBeetle(0)
+    btnText(0,"btn-text")
+
 }
 function movebeetleB2(){
     beb2.src="media/image/Buttons/Beetle/Beetle_Black_02.svg" 
     beb1.src="media/image/Buttons/Beetle/Beetle_Pink_01.svg"
     beb3.src="media/image/Buttons/Beetle/Beetle_Pink_03.svg"
     showSecBeetle(1)
+    btnText(1,"btn-text")
 
 }
 function movebeetleB3(){
@@ -209,6 +225,7 @@ function movebeetleB3(){
     beb1.src="media/image/Buttons/Beetle/Beetle_Pink_01.svg"
     beb2.src="media/image/Buttons/Beetle/Beetle_Pink_02.svg"
     showSecBeetle(2)
+    btnText(2,"btn-text")
 
 }
 function movebeetleB4(){

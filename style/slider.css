@@ -1,7 +1,8 @@
 
 .carousel {
-    height: 600px !important;
-    width: 700px !important;
+    height: 700px !important;
+    width: 1500px !important;
+    /* background-color: grey; */
 }
 #sliderWrapper{
     /* background-color: aliceblue; */
@@ -10,10 +11,11 @@
     align-items: center;
     height: 100%;
     box-sizing: border-box;
+    /* background-color: white; */
     /* border: 1px solid red; */
 }
 #sliderArrow {
-    width: 900px;
+    width: 1700px;
     position: absolute;
     z-index: 0;
     /* border: 2px solid wheat; */
@@ -35,4 +37,15 @@
 .op1{
     opacity: 1 !important;
     transition: 0.3s ease;
+}
+
+.carousel.carousel-slider .carousel-item p {
+    font-size: 30px;
+}
+
+.nav-btn-item img {
+    width: 80px;
+}
+.nav-btns{
+    display: flex;
 }

@@ -57,6 +57,7 @@ var sqb3 = document.getElementById("squidb3");
 function showsquid(){
     hideSlideBtn("squidb4")
     squid4Block = document.getElementById("squid4Block")
+    var textBtn = document.getElementsByClassName("sq-btn-text")[0]
 
     var img= document.getElementById("imagesquid")
     var div1=document.getElementById("squid1Ani")
@@ -73,6 +74,7 @@ function showsquid(){
     hideElement(heading)
     // hideElement(squidImage)
     hideElement(div5)
+    showElement(textBtn )
 
     showElement(div2 )
     showElement(sqb1 )
@@ -117,9 +119,11 @@ function hidesquid(){
     var para2 = document.getElementById("squidmaintextClass2")
     var heading = document.getElementById("squidmainHeading")
     squid4Block = document.getElementById("squid4Block")
+    var textBtn = document.getElementsByClassName("sq-btn-text")
 
     squid4Block.style.display = "none"
-
+    for(let i of textBtn)
+        hideElement(i)
 
 
     showElement(img )
@@ -166,12 +170,14 @@ function movesquidB1(){
     sqb2.src="media/image/Buttons/Squid/Squid_Blue_02.svg"
     sqb3.src="media/image/Buttons/Squid/Squid_Blue_03.svg"
     showSecS(0)
+    btnText(0,"sq-btn-text")
 }
 function movesquidB2(){
     sqb2.src="media/image/Buttons/Squid/Squid_Black_02.svg" 
     sqb1.src="media/image/Buttons/Squid/Squid_Blue_01.svg"
     sqb3.src="media/image/Buttons/Squid/Squid_Blue_03.svg"
     showSecS(1)
+    btnText(1,"sq-btn-text")
 
 }
 function movesquidB3(){
@@ -179,6 +185,7 @@ function movesquidB3(){
     sqb1.src="media/image/Buttons/Squid/Squid_Blue_01.svg"
     sqb2.src="media/image/Buttons/Squid/Squid_Blue_02.svg"
     showSecS(2)
+    btnText(2,"sq-btn-text")
 
 }
 // back button

@@ -2,23 +2,23 @@ body{
     background-color: black;
 }
 #squidmainDiv{
-    width: 700px;
-    height: 550px !important;
+    width: 100%;
+    height: 700px !important;
     position: relative;
     /* background-color: brown; */
     overflow: hidden;
 }
 #squidsubDiv{
-    width: 650px;
-    height: 500px;
+    width: 1200px;
+    height: 700px;
     position: relative;
     /* background-color: yellowgreen; */
     overflow: hidden;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 #squidmainHeading{
     position: absolute;
-    width: 370px;
+    width: 625px;
     left: 62%;
     top : 93%;
     transform: translate(-50%,-50%);
@@ -27,32 +27,43 @@ body{
 }
 .squidh1{
     position: relative;
-    top:-40px;
-    font-size: 50px;
-    color:#0000FF;
-    /* font-family: ; */
+    top: -53px;
+    font-size: 90px;
+    color: #0000FF;
+    font-family: 'Playfair-bold', sans-serif;
+    left: 17px;
 }
 #squidmaintextClass1{
     display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
+    /* flex-grow: 1; */
+    /* justify-content: space-around; */
 }
 .squidflex1{
-    width:190px;
+    width:395px;
+    height: 100%;
+    font-family: 'Avenir-bold', sans-serif;
+    position: relative;
+
 }
 .squidflex2{
     position: relative;
-    top:-5px; 
-    left:190px;
-    font-size: 17px; 
-    width: 430px;
-    text-align: justify;
-    /* font-family: ; */
+top: 55px;
+left: 30px;
+font-size: 17px;
+width: 754px;
+text-align: justify;
+line-height: 1;
+font-family: 'Avenir', sans-serif;
+
+
 }
 .squidtext1{
     font-size: 13.6px;
     font-weight: bold;
     color: white;
+    font-family: 'Avenir-bold', sans-serif;
+    margin-left: 30px;
+
     /* font-family: ; */
 }
 .squidtext2{
@@ -62,12 +73,15 @@ body{
 }
 .squidcolorChange1{
     color:#0000FF;
-    font-size: 30px;
+    font-size: 55px;
     font-weight: bold;
     text-align:right;
     position: absolute;
     top:35px;
-    left:45px;
+    font-family: 'Playfair-bold', sans-serif;
+    right: 0;
+    line-height: 1;
+    /* left:45px; */
     /* font-family: ; */
 }
 .squidcolorChange2{
@@ -75,29 +89,29 @@ body{
     
 }
 #squidmaintextClass2{
-    width: 190px;
+    width: 319px;
     font-size: 20px;
-    color:#0000FF;
+    color: #0000FF;
     position: relative;
-    top:270px;
-    left:230px;
+    top: 502px;
+    left: 11px;
 }
 .squidcolorChange3{
     color:white;
 }
 .squidImage{
     position: absolute;
-    width: 300px;
+    width: 600px;
     left: 46%;
-    top : 60%;
+    top: 46%;
     transform: translate(-50%,-50%);
     z-index: 1;
 }
 #squid1Ani{
-    width: 270px;
+    width: 600px;
     position: absolute;
     left: 58%;
-    top : 56%;
+    top: 40%;
     transform: translate(-50%,-50%);
 }
 #squid2Ani{
@@ -115,40 +129,57 @@ body{
     transform: translate(-50%,-50%);
 }
 #squid4Ani{
-    width:450px;
+    width: 950px;
     position: absolute;
-    top:55%;
-    left:47%;
+    top: 63%;
+    left: 45%;
     transform: translate(-50%,-50%);
 }
 #squid4image{
-    width:270px;
+    width: 525px;
     position: absolute;
-    top:54%;
-    left:47%;
+    top: 63%;
+    left: 47%;
     transform: translate(-50%,-50%);
 }
 #squid5Ani{
-    width: 270px;
+    width: 600px;
     position: absolute;
-    left: 57.3%;
-    top : 56%;
+    left: 56%;
+    top: 40%;
     transform: translate(-50%,-50%);
-}
+    }
+
 #squidButton{
     display: flex;
-    width: 50px;
-    /* background-color: aqua; */
+    /* width: 50px; */
+    height: auto;
     justify-content: space-evenly;
-    height:200px;
     flex-direction: column;
     position: absolute;
-    top:60%;
-    right:0%
+    top:50%;
+    right:5%;
     }
+
 #squidb4{
-    width:40px;
-        position: absolute;
-        top:5%;
-        right:1%
+    width: 57px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+        }
+#squidButton img{
+    width: 80px;  
+}
+#squidButton div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+#squidButton p{
+    font-family: 'Avenir-bold', sans-serif;
+    color: #0000FF;
+    margin-right: 10px;
+    text-transform: capitalize !important;
+     
 }

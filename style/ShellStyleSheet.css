@@ -1,60 +1,81 @@
-body{
-    background-color: rgb(150, 82, 82);
-}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("./font/Avenir_Font/Avenir-Book.ttf");
+    }
+@font-face {
+    font-family: "Avenir-bold";
+    src: url("./font/Avenir_Font/AvenirLTStd-Black.otf");
+    }
+@font-face {
+    font-family: "Playfair-bold";
+    src: url("./font/PlayfairDisplay_Font/PlayfairDisplay-Bold.ttf");
+    }
+    @font-face {
+    font-family: "Playfair-r";
+    src: url("./font/PlayfairDisplay_Font/PlayfairDisplay-Regular.ttf");
+    }
 #shellmainDiv{
-    width: 700px;
-    height: 550px !important;
-    position: relative;
-    /* background-color: brown; */
-    overflow: hidden;
-}
-#shellsubDiv{
-    width: 650px;
-    height: 515px;
+    width: 100% !important;
+    height: 700px !important;
     position: relative;
     /* background-color: green; */
-    margin-top: 5%;
+    /* margin-top: 5%; */
     overflow: hidden;
+    /* background-color: darkgray; */
+}
+#shellsubDiv{
+    width: 1200px;
+    height: 700px;
+    position: relative;
+    /* background-color: green; */
+    /* margin-top: 5%; */
+    overflow: hidden;
+    /* background-color: darkgray; */
 }
 #shellmainHeading{
     position: absolute;
-    width: 370px;
+    width: 600px;
     left: 62%;
-    top : 93%;
+    top : 97%;
     transform: translate(-50%,-50%);
     font-weight: bold;
     
 }
 .shellh1{
     position: relative;
-    top:-40px;
-    font-size: 50px;
+    top:-62px;
+    font-size: 90px;
     color:#FFFF00;
+    font-family: 'Playfair-bold', sans-serif;
+
     /* font-family: ; */
 }
 #shellmaintextClass1{
     display: flex;
     flex-grow: 1;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .shellflex1{
-    width:180px;
+    width:116%;
+    height: 100%;
 }
 .shellflex2{
     position: relative;
-    top:-5px; 
-    left:212px;
-    font-size: 17px; 
-    width:430px;
-    text-align: justify;
-    /* font-family: ; */
+    left: 18px;
+    font-family: 'Avenir', sans-serif;
+    top: 57px;
+
+
 }
 .shelltext1{
-    font-size: 13.6px;
+    /* font-size: 13.6px; */
     font-weight: bold;
     color: white;
     position: relative;
-    left:11%;
+    /* left:11%; */
+    font-family: 'Avenir-bold', sans-serif;
+
     /* font-family: ; */
 }
 
@@ -64,18 +85,22 @@ body{
     
 }
 .shelltext3{
-    font-size: 13.6px;
     font-weight: bold;
     color: white;
+    width: 515px;
+    font-family: 'Avenir-bold', sans-serif;
+
     /* font-family: ; */
 }
 .shellcolorChange1{
     color:#FFFF00;
-    font-size: 30px;
+    font-size: 55px;
     font-weight: bold;
     text-align: right;
     position: absolute;
     top:35px;
+    font-family: 'Playfair-r', sans-serif;
+
     /* font-family: ; */
 }
 .shellcolorChange2{
@@ -84,11 +109,11 @@ body{
 }
 #shellmaintextClass2{
     width: 200px;
-    /* font-size:10px; */
-    color:#FFFF00;
+    font-size: 20px;
+    color: #FFFF00;
     position: relative;
-    top:260px;
-    left:250px;
+    top: 487px;
+    left: 451px;
 }
 .shellcolorChange3{
     color:white;
@@ -96,17 +121,17 @@ body{
 }
 .shellImage{
     position: absolute;
-    width: 230px;
+    width: 500px;
     left: 52%;
-    top : 52%;
+    top: 45%;
     transform: translate(-50%,-50%);
     z-index: 1;
 }
 #shell1Ani{
-    width: 250px;
+    width: 550px;
     position: absolute;
-    left: 60%;
-    top : 51%;
+    left: 63%;
+    top: 45%;
     transform: translate(-50%,-50%);
 }
 #shell2Ani{
@@ -117,46 +142,63 @@ body{
     transform: translate(-50%,-50%);
 }
 #shell3Ani{
-    width:420px;
-    position: absolute;
-    top:53%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    width: 800px;
+position: absolute;
+top: 69%;
+left: 53%;
+transform: translate(-50%,-50%);
 }
 #shell4image{
-    width:400px;
+    width: 650px;
     position: absolute;
-    top:53%;
-    left:55%;
+    top: 67%;
+    left: 52%;
     transform: translate(-50%,-50%);
 }
 #shell4Ani{
-    width:400px;
+    width: 650px;
     position: absolute;
-    top:53%;
-    left:55%;
+    top: 66.5%;
+    left: 51.5%;
     transform: translate(-50%,-50%);
 }
 #shell5Ani{
-    width: 250px;
+    width: 550px;
     position: absolute;
-    left: 60%;
-    top : 51%;
+    left: 63%;
+    top: 45%;
     transform: translate(-50%,-50%);
 }
 #shellButton{
     display: flex;
-    width: 50px;
-    height:200px;
+    /* width: 50px; */
+    height: auto;
     justify-content: space-evenly;
     flex-direction: column;
     position: absolute;
     top:50%;
-    right:0%
+    right:5%;
     }
- #shellb4{
-        width:40px;
-        position: absolute;
-        top:5%;
-        right:1%
+
+#shellb4{
+    width: 57px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
         }
+#shellButton img{
+    width: 80px;  
+}
+#shellButton div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+#shellButton p{
+    font-family: 'Avenir-bold', sans-serif;
+    color: #FFFF00;
+    margin-right: 10px;
+    text-transform: capitalize !important;
+     
+}

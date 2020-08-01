@@ -57,6 +57,7 @@ var sb3 = document.getElementById("shellb3");
 function showshell(){
     hideSlideBtn("shellb4")
     var ImageBlock = document.getElementById("shell4Block")
+    var textBtn = document.getElementsByClassName("s-btn-text")[0]
 
     var img= document.getElementById("imageshell")
     var div1=document.getElementById("shell1Ani")
@@ -72,7 +73,7 @@ function showshell(){
     hideElement(heading)
     hideElement(shellImage)
     hideElement(div5)
-
+    showElement(textBtn)
     showElement(div2 )
     showElement(sb1 )
     showElement(sb2 )
@@ -106,7 +107,7 @@ function showshell(){
 function hideshell(){
     showSlideBtn("shellb4")
     showSecShell(0)
-
+    var textBtn = document.getElementsByClassName("s-btn-text")
     var img= document.getElementById("imageshell")
     var div1=document.getElementById("shell1Ani")
     var div2=document.getElementById("shell2Ani")
@@ -120,6 +121,8 @@ function hideshell(){
     var ImageBlock = document.getElementById("shell4Block")
 
     ImageBlock.style.display = "none"
+    for(let i of textBtn)
+        hideElement(i)
 
     showElement(img )
     showElement(div1 )
@@ -163,12 +166,16 @@ function moveshellB1(){
     sb2.src="../media/image/Buttons/Shell/Shell_Yellow_02.svg"
     sb3.src="../media/image/Buttons/Shell/Shell_Yellow_03.svg"
     showSecShell(0)
+    btnText(0,"s-btn-text")
+
 }
 function moveshellB2(){
     sb2.src="../media/image/Buttons/Shell/Shell_Black_02.svg" 
     sb1.src="../media/image/Buttons/Shell/Shell_Yellow_01.svg"
     sb3.src="../media/image/Buttons/Shell/Shell_Yellow_03.svg"
     showSecShell(1)
+    btnText(1,"s-btn-text")
+
 
 }
 function moveshellB3(){
@@ -176,6 +183,8 @@ function moveshellB3(){
     sb1.src="../media/image/Buttons/Shell/Shell_Yellow_01.svg"
     sb2.src="../media/image/Buttons/Shell/Shell_Yellow_02.svg"
     showSecShell(2)
+    btnText(2,"s-btn-text")
+
 
 }
 function moveshellB4(){
