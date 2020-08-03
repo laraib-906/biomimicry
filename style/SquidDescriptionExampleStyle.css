@@ -3,12 +3,11 @@ body{
 }
 
 #squidInsubDiv{
-    width: 1200px;
-    height: 700px;
+    width: 1420px;
+    height: 1080px;
     position: relative;
-    /* background-color: yellowgreen; */
-    overflow: hidden;
-    /* background-color: purple; */
+    /* background-color: yellowgreen;
+    background-color: purple; */
 }
 #squidInmaintextClass1{
     display: flex;
@@ -16,19 +15,24 @@ body{
     /* justify-content: space-around; */
 }
 .squidInflex1{
-    width:355px;
-    position: relative;
+    width: 355px;
+position: relative;
+top: 152px;
+left: 283px;
 }
 .squidInflex2{
     font-family: 'Avenir', sans-serif;
-
-    position: relative;
-    top: 60px;
-    font-size: 17px;
-    width: 820px;
-    text-align: justify;
-    line-height: 1;
-    left: 19px;
+position: absolute;
+top: 60px;
+font-size: 17px;
+width: 820px;
+text-align: justify;
+line-height: 41px;
+left: 19px;
+width: 881px;
+height: 257px;
+left: 664px;
+top: 203px;
 }
 .squidIntext1{
     font-size: 13.6px;
@@ -71,33 +75,31 @@ body{
     
 }
 #squidInImage{
-    width: 590px;
     position: absolute;
-    left: 50%;
-    top: 67%;
-    transform: translate(-50%,-50%);
-    /* height:394px; */
+width: 593px;
+height: 316px;
+left: 634px;
+top: 617px;
 }
 #squidIn1{
     width: 1019px;
-    position: absolute;
-    left: 53%;
-    top: 55%;
-    transform: translate(-50%,-50%);
+position: absolute;
+left: 484px;
+top: 320px;
 }
 #squidInArm{
-    width: 200px;
     position: absolute;
-    left: 15%;
-    top: 64%;
-    transform: translate(-50%,-50%);
+width: 242.59px;
+height: 572.54px;
+left: 344px;
+top: 398px;
 }
 #squidInArm1{
-    width: 277px;
     position: absolute;
-    left: 11%;
-    top: 63%;
-    transform: translate(-50%,-50%);
+width: 402.59px;
+/* height: 572.54px; */
+left: 224px;
+top: 298px;
 }
 
 .squidIntext3{
@@ -111,31 +113,37 @@ body{
 
 /* beetle example css */
 #squidInsubDiv1{
-    width: 1200px;
-    height: 700px;
+    width: 1420px;
+    height: 1080px;
     position: relative;
     /* background-color: yellowgreen; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #squidRealImage{
-    width: 520px;
     position: absolute;
-    left: 58.2%;
-    top: 60%;
-    transform: translate(-50%,-50%);
+width: 647px;
+height: 460px;
+left: 667px;
+top: 433px;
 }
 #squidrealAni{
-    width: 520.5px;
     position: absolute;
-    left:58.2%;
-    top : 60.5%;
-    transform: translate(-50%,-50%);
+width: 647px;
+height: 460px;
+left: 667px;
+top: 433px;
 }
 .squidIntext4{
-    text-align: justify;
+    /* text-align: justify;
     color: white;
     position: absolute;
     width: 600px;
     left: 35%;
-    top: 86%;
+    top: 86%; */
+    position: absolute;
+width: 641px;
+height: 92px;
+left: 667px;
+top: 906px;
+color: white;
 }

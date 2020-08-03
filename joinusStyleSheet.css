@@ -1,0 +1,340 @@
+body{
+    background-color: black;
+}
+.joinH1{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 200px;
+    text-align: center;
+    color: #FFFF00;
+    position: absolute;
+    left: 32.66%;
+    right: 32.66%;
+    top: 9.91%;
+    bottom: 20%;
+    margin-top: 34px;
+}
+#joinBackground {
+    width: 1920px;
+    height: 1080px;
+    margin-top:26px;
+    /* overflow: hidden; */
+}
+.joinSubhead{
+    color: white;
+    /* font-family: Playfair Display; */
+    /* line-height: 200px; */
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    left: 32.66%;
+    right: 32.66%;
+    top: 12%;
+    bottom: 62.22%;
+    margin-top:224px;
+}
+
+.JoinImage{
+    display: flex;
+    flex-direction: row;
+}
+#joinImg1{
+    position: absolute;
+    width: 129.8px;
+    height: 130.05px;
+    left: 313px;
+    top: 400px;
+    margin-top: 101px;
+}
+#joinImg1Jason{
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    left: 308px;
+    top: 392px;
+    margin-top: 101px;
+}
+#joinImg2{
+    position: absolute;
+width: 130.33px;
+height: 152.53px;
+left: 691px;
+top: 400px;
+margin-top: 101px;
+}
+#joinImg2Jason{
+    position: absolute;
+width: 144px;
+height: 164px;
+left: 685px;
+top: 397px;
+margin-top: 101px;
+}
+#joinImg3{
+    position: absolute;
+    width: 128.97px;
+    height: 136.24px;
+    left: 1100px;
+    top: 400px;
+    margin-top: 101px;
+}
+#joinImg3Jason{
+    position: absolute;
+    width: 149px;
+    height: 149px;
+    left: 1092px;
+    top: 395px;
+    margin-top: 101px;
+}
+#joinImg4{
+    position: absolute;
+    width: 131.55px;
+    height: 133.22px;
+    left: 1492px;
+    top: 400px;
+    margin-top: 101px;
+}
+#joinImg4Jason{
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    left: 1488px;
+    top: 391px;
+    margin-top: 101px;
+}
+.joinImg1head{
+    position: absolute;
+width: 230px;
+height: 83px;
+left: 269px;
+top: 613px;
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 208.6%;
+margin-top:36px;
+/* or 83px */
+
+text-align: center;
+
+color: #FFFF00;
+}
+.joinImg1sub{
+    position: absolute;
+width: 93px;
+height: 31px;
+left: 331px;
+top: 685px;
+
+/* font-family: Avenir; */
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 113.6%;
+margin-top:22px;
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.joinImg2head{
+    position: absolute;
+    width: 280px;
+    height: 83px;
+    left: 616px;
+    top: 614px;
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 208.6%;
+/* or 83px */
+
+text-align: center;
+
+color: #FFFF00;
+margin-top:36px;
+}
+.joinImg2sub{
+    position: absolute;
+    width: 167px;
+    height: 63px;
+    left: 673px;
+top: 686px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 113.6%;
+/* identical to box height, or 31px */
+
+text-align: center;
+
+color: #FFFFFF;
+margin-top:22px;
+
+}
+.joinImg3head{
+    position: absolute;
+    width: 250px;
+    height: 83px;
+    left: 1049px;
+    top: 613px;
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 208.6%;
+/* or 83px */
+margin-top:36px;
+text-align: center;
+
+color: #FFFF00;
+}
+.joinImg3sub{
+    position: absolute;
+    width: 146px;
+height: 63px;
+left: 1091px;
+top: 685px;
+margin-top:22px;
+font-family: Avenir;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 113.6%;
+/* identical to box height, or 31px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.joinImg4head{
+    position: absolute;
+    width: 260px;
+    height: 91px;
+    left: 1433px;
+    top: 632px;
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 113.6%;
+/* or 83px */
+margin-top: 36px;
+text-align: center;
+
+color: #FFFF00;
+}
+#SignUpb1{
+    position: absolute;
+    width: 314px;
+    height: 90px;
+    left: 803px;
+    top: 819px;
+    margin-top:69px;
+}
+#SignUpb1json{
+    position: absolute;
+    width: 314px;
+    height: 90px;
+    left: 803px;
+    top: 800px;
+    margin-top:69px;
+}
+#joinCheckBox1{
+    position: absolute;
+    width: 29px;
+height: 28px;
+left: 732px;
+top: 940px;
+margin-top: 35px;
+}
+#joinCheckBox1Svg{
+    position: absolute;
+    width: 40px;
+height: 40px;
+left: 728px;
+top: 926px;
+margin-top: 35px;
+}
+.joinChecklabel1{
+    position: absolute;
+    left: 40.42%;
+    right: 34.27%;
+    top: 86.94%;
+    bottom: 6.57%;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 33px;
+
+color: #FFFFFF;
+margin-top: 37px;
+}
+#joinCheckBox2{
+    position: absolute;
+    width: 29px;
+    height: 28px;
+    left: 732px;
+    top: 981px;
+    margin-top:35px;
+}
+#joinCheckBox2Svg{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 725px;
+    top: 965px;
+    margin-top:35px;
+}
+.joinChecklabel2{
+    position: absolute;
+    left: 40.42%;
+    right: 34.27%;
+    top: 86.94%;
+    bottom: 6.57%;
+    margin-top: 74px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 33px;
+
+color: #FFFFFF;
+}
+.joinarrow1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+left: 27%;
+right: 68.95%;
+top: 48.95%;
+bottom: 49.43%;
+}
+.joinarrow2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 48%;
+    right: 48.08%;
+    top: 48.89%;
+    bottom: 49.32%;
+}
+.joinarrow3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 69%;
+    right: 26.96%;
+    top: 49.26%;
+    bottom: 48.57%;
+}

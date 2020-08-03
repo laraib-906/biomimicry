@@ -17,7 +17,7 @@
     }
 #shellmainDiv{
     width: 100% !important;
-    height: 700px !important;
+    height: 1080px !important;
     position: relative;
     /* background-color: green; */
     /* margin-top: 5%; */
@@ -25,29 +25,36 @@
     /* background-color: darkgray; */
 }
 #shellsubDiv{
-    width: 1200px;
-    height: 700px;
+    width: 1420px;
+    height: 1080px;
     position: relative;
     /* background-color: green; */
     /* margin-top: 5%; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: darkgray; */
 }
 #shellmainHeading{
-    position: absolute;
+    /* position: absolute;
     width: 600px;
     left: 62%;
     top : 97%;
     transform: translate(-50%,-50%);
-    font-weight: bold;
+    font-weight: bold; */
     
 }
 .shellh1{
-    position: relative;
-    top:-62px;
-    font-size: 90px;
-    color:#FFFF00;
-    font-family: 'Playfair-bold', sans-serif;
+    left: 701px;
+		top: 900px;
+		position: absolute;
+		overflow: visible;
+		width: 496px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 90px;
+		color: rgba(255,253,0,1);
 
     /* font-family: ; */
 }
@@ -57,26 +64,40 @@
     /* justify-content: space-around; */
 }
 .shellflex1{
-    width:116%;
-    height: 100%;
+    /* width:116%;
+    height: 100%; */
 }
 .shellflex2{
-    position: relative;
-    left: 18px;
-    font-family: 'Avenir', sans-serif;
-    top: 57px;
+    /* left: 253px; */
+		/* top: 186px; */
+		position: absolute;
+		overflow: visible;
+		width: 936px;
+		/* white-space: nowrap; */
+		/* text-align: right; */
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 55px;
+        color: rgba(251,251,3,1);
+        left: 660px;
+top: 205px;
 
 
 }
 .shelltext1{
-    /* font-size: 13.6px; */
-    font-weight: bold;
-    color: white;
-    position: relative;
-    /* left:11%; */
-    font-family: 'Avenir-bold', sans-serif;
-
-    /* font-family: ; */
+    left: 292px;
+		top: 152px;
+		position: absolute;
+		overflow: visible;
+		width: 317px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir black;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		color: rgba(255,255,255,1);
 }
 
 .shelltext2{
@@ -85,21 +106,34 @@
     
 }
 .shelltext3{
-    font-weight: bold;
-    color: white;
-    width: 515px;
-    font-family: 'Avenir-bold', sans-serif;
+    left: 701px;
+		top: 905px;
+		position: absolute;
+		overflow: visible;
+		width: 437px;
+		white-space: nowrap;
+		text-align: left;
+        font-family: 'Avenir-bold', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		color: rgba(255,255,255,1);
 
     /* font-family: ; */
 }
 .shellcolorChange1{
-    color:#FFFF00;
-    font-size: 55px;
-    font-weight: bold;
-    text-align: right;
-    position: absolute;
-    top:35px;
-    font-family: 'Playfair-r', sans-serif;
+    left: 253px;
+		top: 186px;
+		position: absolute;
+		overflow: visible;
+		width: 356px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 55px;
+		color: rgba(251,251,3,1);
 
     /* font-family: ; */
 }
@@ -108,12 +142,18 @@
     
 }
 #shellmaintextClass2{
-    width: 200px;
-    font-size: 20px;
-    color: #FFFF00;
-    position: relative;
-    top: 487px;
-    left: 451px;
+    left: 607px;
+		top: 941px;
+		position: absolute;
+		overflow: visible;
+		width: 166px;
+		white-space: nowrap;
+		text-align: left;
+        font-family: 'Avenir-bold', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
 }
 .shellcolorChange3{
     color:white;
@@ -121,18 +161,20 @@
 }
 .shellImage{
     position: absolute;
-    width: 500px;
-    left: 52%;
-    top: 45%;
-    transform: translate(-50%,-50%);
+		width: 472px;
+		height: 358px;
+		left: 625px;
+		top: 462px;
+		overflow: visible;
     z-index: 1;
 }
 #shell1Ani{
-    width: 550px;
     position: absolute;
-    left: 63%;
-    top: 45%;
-    transform: translate(-50%,-50%);
+		width: 500px;
+		height: 500px;
+		left: 704px;
+		top: 410px;
+		overflow: visible;
 }
 #shell2Ani{
     width:250px;
@@ -149,42 +191,46 @@ left: 53%;
 transform: translate(-50%,-50%);
 }
 #shell4image{
-    width: 650px;
     position: absolute;
-    top: 67%;
-    left: 52%;
-    transform: translate(-50%,-50%);
+    width: 752.87px;
+    height: 434.09px;
+    left: 473px;
+    top: 403px;
+    overflow: visible;
 }
 #shell4Ani{
-    width: 650px;
     position: absolute;
-    top: 66.5%;
-    left: 51.5%;
-    transform: translate(-50%,-50%);
+    width: 752.87px;
+    height: 434.09px;
+    left: 473px;
+    top: 403px;
+    overflow: visible;
 }
 #shell5Ani{
-    width: 550px;
     position: absolute;
-    left: 63%;
-    top: 45%;
-    transform: translate(-50%,-50%);
+		width: 500px;
+		height: 500px;
+		left: 704px;
+		top: 410px;
+		overflow: visible;
 }
 #shellButton{
     display: flex;
     /* width: 50px; */
     height: auto;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex-direction: column;
     position: absolute;
-    top:50%;
-    right:5%;
+    top: 653px;
+    right: 190px;
     }
 
 #shellb4{
     width: 57px;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+position: absolute;
+top: 188px;
+/* right: 5%; */
+left: 1650px;
         }
 #shellButton img{
     width: 80px;  
@@ -193,12 +239,42 @@ transform: translate(-50%,-50%);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 #shellButton p{
-    font-family: 'Avenir-bold', sans-serif;
+    /* font-family: 'Avenir-bold', sans-serif; */
     color: #FFFF00;
+    font-family: 'Avenir-bold', sans-serif;
+    /* color: #ED1E79; */
     margin-right: 10px;
     text-transform: capitalize !important;
      
+}
+#Solutions1 {
+    left: 183px;
+    top: 120px;
+    position: absolute;
+    overflow: visible;
+    width: 673px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    color: rgba(255,253,0,1);
+}
+#DISCOVERED_BY_AI1{
+    left: 188px;
+    top: 304px;
+    position: absolute;
+    overflow: visible;
+    width: 361px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Avenir-bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    color: rgba(255,255,255,1);
 }

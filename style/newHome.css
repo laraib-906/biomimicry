@@ -1,0 +1,57 @@
+#BIOMIMICRY {
+    left: 291px;
+    top: 185px;
+    position: absolute;
+    overflow: visible;
+    width: 1339px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-size: 200px;
+    color: rgba(255,253,0,1);
+    font-weight: 900;
+}
+#PROJECT {
+    left: 494px;
+    top: 398px;
+    position: absolute;
+    overflow: visible;
+    width: 934px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-size: 200px;
+    color: rgba(255,253,0,1);
+    font-weight: 900;
+
+}
+#THE {
+    left: 212px;
+    top: 256px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Avenir-bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+}
+#SOLVING_GLOBAL_CRISIS_WITH_NAT {
+    left: 436px;
+    top: 738px;
+    position: absolute;
+    overflow: visible;
+    width: 1050px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Avenir-bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+}

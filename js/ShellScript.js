@@ -68,6 +68,11 @@ function showshell(){
     var para2 = document.getElementById("shellmaintextClass2")
     var heading = document.getElementById("shellmainHeading")
     var shellImage = document.getElementById("shell4image")
+    var txt1 = document.getElementById("Solutions1")
+    var txt2 = document.getElementById("DISCOVERED_BY_AI1")
+    hideElement(txt1)
+    hideElement(txt2)
+
     hideElement(img)
     hideElement(div1)
     hideElement(heading)
@@ -119,7 +124,10 @@ function hideshell(){
     var para2 = document.getElementById("shellmaintextClass2")
     var heading = document.getElementById("shellmainHeading")
     var ImageBlock = document.getElementById("shell4Block")
-
+    var txt1 = document.getElementById("Solutions1")
+    var txt2 = document.getElementById("DISCOVERED_BY_AI1")
+    showElement(txt1)
+    showElement(txt2)
     ImageBlock.style.display = "none"
     for(let i of textBtn)
         hideElement(i)

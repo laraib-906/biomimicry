@@ -6,15 +6,15 @@ body{
     height: 550px !important;
     position: relative;
     /* background-color: brown; */
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 #shellInsubDiv{
-    width: 1200px;
-    height:  700px;
+    width: 1420px;
+    height:  1080px;
     position: relative;
     /* background-color: purple; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* margin-top: 5%; */
     /* background-color: purple; */
 }
@@ -28,25 +28,34 @@ body{
     width:200px;
 }
 .shellInflex2{
-    position: relative;
-    top: 15px;
-    left: 32%;
-    font-size: 17px;
-    width: 794px;
-    text-align: justify;
-    line-height: 1;
-    font-family: 'Avenir', sans-serif;
+    left: 660px;
+top: 194px;
+		position: absolute;
+		overflow: visible;
+		width: 950px;
+		text-align: left;
+        font-family: 'Avenir', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,253,0,1);
 
 }
 
 .shellIntext1{
-    font-weight: bold;
-    color: white;
-    position: relative;
-    left: 5%;
     font-family: 'Avenir-bold', sans-serif;
-    width: 361px;
-
+    left: 261px;
+top: 135px;
+    position: absolute;
+    overflow: visible;
+    width: 317px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'Avenir-bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(255,255,255,1);
 }
 
 .shellIntext2{
@@ -57,14 +66,19 @@ body{
 
 
 .shellIncolorChange1{
-    color:#FFFF00;
-    font-size: 55px;
-    font-weight: bold;
-    text-align: right;
-    position: absolute;
-    top:35px;
-    left: 0%;
-    font-family: 'Playfair-r', sans-serif;
+    left: 253px;
+		top: 186px;
+		position: absolute;
+		overflow: visible;
+		width: 356px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 55px;
+        color: rgba(251,251,3,1);
+        line-height: 60px;
 
     /* font-family: ; */
 }
@@ -73,91 +87,117 @@ body{
     
 }
 #shellInImage{
-    width: 470px;
     position: absolute;
-    left: 50%;
-    top: 62%;
-    transform: translate(-50%,-50%);
+width: 472px;
+height: 358px;
+left: 720px;
+top: 497px;
     /* height:394px; */
 }
 #shellIn1{
     width: 993px;
     position: absolute;
-    left: 50%;
+    left: 68%;
     top: 61%;
     transform: translate(-50%,-50%);
 }
 #shellInMap{
-    width: 325px;
     position: absolute;
-    left: 71%;
-    top: 36%;
+width: 332.26px;
+height: 345.32px;
+left: 1243px;
+top: 407px;
 }
 .shellInLines{
-    width: 420px;
     position: absolute;
-    left: 35%;
-    top: 89%;
+width: 535.46px;
+height: 6.57px;
+left: 688px;
+top: 917px;
 }
     
 
 .shellIntext3{
-    color: white;
-    position: absolute;
-    width: auto;
-    left: 33%;
-    top: 95%;
-    font-size: 20px !important;
-    font-family: 'Avenir', sans-serif;
+    left: 728px;
+		top: 925px;
+		position: absolute;
+		overflow: visible;
+		width: 452px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir Book Oblique;
+		font-style: normal;
+		font-weight: normal;
+        font-size: 20px;
+        left: 728px !important;
+		color: rgba(255,255,255,1);
 
 }
 #shellInchart{
-    width: 189px;
+    width: 231px;
     position: absolute;
-    left:8%;
-    top : 31%;
+    left: 378px;
+    top: 442px;
 }
 /* shell example css */
 #shellInsubDiv1{
-    width: 1200px;
-    height: 700px;
+    width: 1420px;
+    height: 1080px;
     position: relative;
     /* background-color: purple; */
-    overflow: hidden;
+    /* overflow: hidden; */
 /* margin-top: 5%; */
 /* background-color: purple; */
 }
 #shellRealImage{
-    width: 650px;
-    position: absolute;
-    left: 58.5%;
-    top: 61%;
-    transform: translate(-50%,-50%);
+    
+position: absolute;
+width: 650px;
+height: 470px;
+left: 664px;
+top: 401px;
+
+
 }
 .shellIntext4{
-    font-size: 13.6px;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    left:1%;
-    /* font-family: ; */
+    left: 262px;
+top: 139px;
+		position: absolute;
+		overflow: visible;
+		width: 317px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir black;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+        color: rgba(255,255,255,1);
+        font-family: 'Avenir-bold', sans-serif;
+
 }
 .shellInflex3{
-    position: absolute;
-    top: 9.5%;
-    left: 32%;
-    font-size: 17px;
-    width: 800px;
-    text-align: justify;
-    font-family: 'Avenir', sans-serif;
-    line-height: 1;
+    left: 668px;
+		top: 196px;
+		position: absolute;
+		overflow: visible;
+		width: 811px;
+		/* white-space: nowrap; */
+		text-align: left;
+        font-family: 'Avenir-r', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,253,0,1);
 
     /* font-family: ; */
 }
 #shellrealAni{
-    width: 650px;
-    position: absolute;
-    left: 58.5%;
-    top: 61.5%;
-    transform: translate(-50%,-50%);
+    
+position: absolute;
+width: 650px;
+height: 470px;
+left: 664px;
+top: 401px;
+
+
 }

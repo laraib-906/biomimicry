@@ -17,21 +17,54 @@
     /* margin-top: 5%; */
     /* overflow: hidden; */
 }
-#beetlemainHeading{
+#Solutions {
+    left: 183px;
+    top: 120px;
     position: absolute;
+    overflow: visible;
+    width: 673px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 150px;
+    color: rgba(234,27,117,1);
+	}
+	#DISCOVERED_BY_AI_ {
+		left: 188px;
+		top: 304px;
+		position: absolute;
+		overflow: visible;
+		width: 361px;
+		white-space: nowrap;
+		text-align: left;
+        font-family: 'Avenir-bold', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 37px;
+		color: rgba(255,255,255,1);
+	}
+#beetlemainHeading{
+    /* position: absolute;
     width: 370px;
     left: 725px;
     top: 913.01px;
-    font-weight: bold;
+    font-weight: bold; */
 }
 .beetleh1{
-    position: relative;
-    top:-40px;
+    left: 701px;
+    top: 900px;
+    position: absolute;
+    overflow: visible;
+    width: 636px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
     font-size: 90px;
-    color:#ED1E79;
-    width: 700px;
-    margin-left: -150px;
-    margin-top: 31px;
+    color: rgba(234,27,118,1);
     /* font-family: ; */
 }
 #beetlemaintextClass1{
@@ -65,11 +98,18 @@
 
 }
 .beetletext1{
-    font-size: 27px !important;
-    font-weight: bold;
-    color: white;
-    width: 500px;
-    margin-left: -150px;
+    left: 701px;
+		top: 905px;
+		position: absolute;
+		overflow: visible;
+		width: 408px;
+		white-space: nowrap;
+		text-align: left;
+        font-family: 'Avenir-bold', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 27px;
+		color: rgba(255,255,255,1);
 }
 .beetletext2{
     /* font-weight: bold; */
@@ -92,17 +132,28 @@
     
 }
 .bettleImage{
-    position: absolute;
+    /* position: absolute;
 width: 734px;
 left: 554px;
-top: 443px;
-    z-index: 1;
+top: 443px; */
+
+
+    position: absolute;
+		width: 711px;
+		height: 394px;
+		left: 549px;
+		top: 527px;
+        overflow: visible;
+        z-index: 1;
+
 }
 #beetle1Ani{
-    width: 430px;
-position: absolute;
-left: 783px;
-top: 368px;
+    position: absolute;
+		width: 500px;
+		height: 500px;
+		left: 704px;
+		top: 410px;
+		overflow: visible;
 }
 #beetle2Ani{
     width: 400px;
@@ -144,10 +195,12 @@ left: 554px;
     color:white;
 }
 #beetle5Ani{
-    width: 430px;
-position: absolute;
-left: 783px;
-top: 368px;
+    position: absolute;
+		width: 500px;
+		height: 500px;
+		left: 704px;
+		top: 410px;
+		overflow: visible;
 }
 #beetleButton{
     display: flex;

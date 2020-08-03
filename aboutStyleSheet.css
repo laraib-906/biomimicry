@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("./font/Avenir_Font/Avenir-Book.ttf");
+    }
+@font-face {
+    font-family: "Avenir-Black";
+    src: url("./font/Avenir_Font/AvenirLTStd-Black.otf");
+    }
+.b1{
+    position: fixed;
+		width: 1805px;
+        height: 940px;
+		background-color: rgba(0,146,69,1);
+		overflow: hidden;
+		--web-view-name: Web 1920 – 1;
+		--web-view-id: Web_1920__1;
+		--web-scale-on-resize: true;
+        --web-enable-deep-linking: true;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+.hide{
+    display: none;
+    transform: scale(0.5);
+}
+
+.aboutUs{
+    left: 126px;
+    top: 56px;
+    position: absolute;
+    overflow: hidden;
+    width: 236px;
+    height: 62px;
+    text-align: left;
+    font-family: Avenir-Black,  sans-serif;
+    font-style: black;
+    font-weight: black;
+    font-size: 50px;
+    color: white;
+}
+.aboutColorheading{
+    color:#FFFF00;
+    left: 197px;
+		top: 36px;
+		line-height: 100%;
+		position: absolute;
+		overflow: visible;
+		width: 567px;
+		height: 276px;
+		text-align: left;
+		font-family:  Avenir-Black,  sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 80px;
+}
+#Closeabout{
+    position: absolute;
+    width: 17.96px;
+    height: 17.15px;
+    left: 1753px;
+    top: 27px;
+}
+.aboutColor{
+    color:#FFFF00;
+}
+.p1{
+    color: white;
+        left: 742px;
+		top: 199px;
+		position: absolute;
+		overflow: hidden;
+		width: 849px;
+		height: 271px;
+		text-align: left;
+		font-family: Avenir, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+}
+.p2{
+    left: 742px;
+    top: 486px;
+    position: absolute;
+    overflow: hidden;
+    width: 601px;
+    height: 154px;
+    text-align: left;
+    font-family: Avenir, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+color: #FFFFFF;
+}
+.p3{
+    left: 742px;
+    top: 640px;
+    position: absolute;
+    overflow: visible;
+    width: 601px;
+    height: 107px;
+    text-align: left;
+    font-family: Avenir, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: #FFFFFF;
+/* text-decoration-line: underline; */
+}
+.p4{
+    left: 742px;
+    top: 763px;
+    position: absolute;
+    overflow: visible;
+    width: 617px;
+    height: 65px;
+    text-align: left;
+    font-family: Avenir,  sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+.stayTouch{
+    left: 1398px;
+		top: 888px;
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 32px;
+		text-align: left;
+		font-family: Avenir, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,253,0,1);
+}
+.EmailLusil{
+    left: 1526px;
+    top: 888px;
+    position: absolute;
+    overflow: visible;
+    width: 228px;
+    height: 32px;
+    text-align: left;
+    font-family: Avenir, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+    
+}
+.aboutLogo{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: 462px;
+    top: 505px;
+    overflow: visible;
+}

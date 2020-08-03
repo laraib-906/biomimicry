@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>The Biomimicry</title>
+    <link rel="shortcut icon" type="imag/x-icon" href="../media/image/Browser tab icon (Favicon)/Favicon.png" />
+    <Link rel="stylesheet" type="text/css" href="joinusStyleSheet.css">
+        
+</head>
+
+<body>
+   <div id="JoinmainDiv">
+       <h1 class="joinH1">Take part</h1>
+       <div id="joinBackground" ></div>
+        <p class="joinSubhead">IN TEST RUNNING OUR SYSTEM</p>
+        
+        <div class="JoinImage">
+            <div>
+                <div onmouseover="movejoinImg1()" onmouseout="stopjoinImg1()">
+                    <img id="joinImg1" style="display: block;" src="15_joinUs/First_Step_BeforeHover.svg"/>
+                    <div id="joinImg1Jason" style="display:none;"></div>
+                </div>
+                <h1 class="joinImg1head" >FIRST STEP</h1>
+                <p class="joinImg1sub">Sign up</p>
+                <img class="joinarrow1" src="15_JoinUs/Arrow_01.svg" />
+            </div>
+            <div>
+                <div onmouseover="movejoinImg2()" onmouseout="stopjoinImg2()">
+                    <img id="joinImg2" style="display: block;" src="15_joinUs/SecondStep_BeforeHover.svg"/>
+                    <div id="joinImg2Jason" style="display:none;"></div>
+                </div>
+                
+                <h1 class="joinImg2head" >SECOND STEP</h1>
+                <p class="joinImg2sub">Receive a link to the system</p>
+                <img class="joinarrow2" src="15_JoinUs/Arrow_02.svg" />
+            </div>
+            <div>
+                <div onmouseover="movejoinImg3()" onmouseout="stopjoinImg3()">
+                    <img id="joinImg3"src="15_joinUs/ThirdStep_BeforeHover.svg"/>
+                    <div id="joinImg3Jason" style="display:none;"></div>
+                </div>
+                <h1 class="joinImg3head">THIRD STEP</h1>
+                <p class="joinImg3sub">Have fun and explore</p>
+                <img class="joinarrow3" src="15_JoinUs/Arrow_03.svg" />
+            </div>
+            <div>
+                <div onmouseover="movejoinImg4()" onmouseout="stopjoinImg4()">
+                    <img id="joinImg4" style="display:block;" src="15_joinUs/FinalStep_BeforeHover.svg"/>
+                    <div id="joinImg4Jason" style="display:none;"></div>
+                </div>
+                <h1 class="joinImg4head">EXPEND </br>THE SYSTEM</h1>
+            </div>
+        </div>
+        <div onclick="moveSignUpb1()" >
+            <img id="SignUpb1" style="display:block;" src="15_JoinUs/Buttons/Signup_BeforeHover.svg"/>
+            <img id="SignUpb1json" style="display:none;" src="15_JoinUS/Buttons/Check_After.svg"/>
+        </div>
+        <div onclick="movecheckb1()" >
+            <img id="joinCheckBox1" style="display:block;" src="15_JoinUs/Buttons/Check_Before.svg"/>
+            <img id="joinCheckBox1Svg" style="display:none;" src="15_JoinUS/Buttons/Check_After.svg"/>
+        </div>
+            <label class="joinChecklabel1">All personal information collected <span style="color:#FFFF00;">will not be shared.</span></label>
+        <div onclick="movecheckb2()" >
+            <img id="joinCheckBox2" style="display:block;" src="15_JoinUs/Buttons/Check_Before.svg"/>
+            <img id="joinCheckBox2Svg" style="display:none;" src="15_JoinUS/Buttons/Check_After.svg"/>
+        </div>
+            <label class="joinChecklabel2">The only data we take is <span style="color:#FFFF00;">your usage of the system.</span></label>
+        
+            
+            <!-- </div>
+            </div> -->
+   </div>
+   <script src="lottie.js"></script>
+    <script src="joinusScript.js"></script>
+</body>
+
+</html>

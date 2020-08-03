@@ -69,6 +69,10 @@ function showsquid(){
     var para1 = document.getElementById("squidmaintextClass1")
     var para2 = document.getElementById("squidmaintextClass2")
     var heading = document.getElementById("squidmainHeading")
+    var txt1 = document.getElementById("Solutions2")
+    var txt2 = document.getElementById("DISCOVERED_BY_AI2")
+    hideElement(txt1)
+    hideElement(txt2)
     hideElement(img)
     hideElement(div1)
     hideElement(heading)
@@ -120,7 +124,10 @@ function hidesquid(){
     var heading = document.getElementById("squidmainHeading")
     squid4Block = document.getElementById("squid4Block")
     var textBtn = document.getElementsByClassName("sq-btn-text")
-
+    var txt1 = document.getElementById("Solutions2")
+    var txt2 = document.getElementById("DISCOVERED_BY_AI2")
+    showElement(txt1)
+    showElement(txt2)
     squid4Block.style.display = "none"
     for(let i of textBtn)
         hideElement(i)
